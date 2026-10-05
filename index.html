@@ -72,8 +72,8 @@
   ]
 }
     </script>
-    <script type="module" crossorigin src="./assets/main-C9Aez21Z.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Q3YPwxXV.css">
+    <script type="module" crossorigin src="./assets/main-hDKE2-c8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DBofEZcl.css">
   </head>
 
   <body>
@@ -128,7 +128,7 @@
           </ul>
         </nav>
 
-        <a class="btn btn--primary btn--sm site-header__cta" href="#contact">Offerte aanvragen</a>
+        <a class="btn btn--primary btn--sm site-header__cta" href="offerte/">Offerte aanvragen</a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
           <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
@@ -148,7 +148,7 @@
           <li><a href="reviews/">Reviews</a></li>
           <li><a href="#faq">Veelgestelde vragen</a></li>
           <li><a href="vacatures/">Vacatures</a></li>
-          <li><a href="#contact">Contact &amp; offerte</a></li>
+          <li><a href="#contact">Contact &amp; vragen</a></li>
         </ul>
       </nav>
       <nav class="mobile-menu__lang" aria-label="Taal kiezen">
@@ -192,7 +192,7 @@
           <p class="hero__lead">Het adres voor alle automerken: onderhoud, banden, remmen, airco en herstellingen. In twee vestigingen op de Bredabaan.</p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">
+            <a class="btn btn--primary" href="offerte/" data-quote-page>
               <span>Vraag een offerte aan</span>
               <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
@@ -602,9 +602,16 @@
         </div>
         <div class="container contact__inner">
           <div class="contact__intro reveal">
-            <p class="eyebrow">Contact &amp; offerte</p>
-            <h2 id="contact-title">Vraag vrijblijvend een offerte aan.</h2>
-            <p class="section__intro">Vertel ons welke wagen u heeft en wat er moet gebeuren. Liever meteen iemand aan de lijn?</p>
+            <p class="eyebrow">Contact &amp; vragen</p>
+            <h2 id="contact-title">Een vraag? Wij helpen u verder.</h2>
+            <p class="section__intro">Stel uw vraag via het formulier. Liever meteen iemand aan de lijn?</p>
+            <div class="contact__quote">
+              <p><strong>Offerte nodig?</strong> Geef in drie korte stappen door wat uw wagen nodig heeft.</p>
+              <a class="btn btn--primary" href="offerte/" data-quote-page>
+                <span>Offerte aanvragen</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
             <ul class="contact__direct">
               <li>
                 <a href="tel:+32477772499">
@@ -680,7 +687,7 @@
               </div>
 
               <div class="field" data-field="dienst">
-                <label for="f-dienst">Waarvoor wilt u een offerte? <span class="field__opt">(optioneel)</span></label>
+                <label for="f-dienst">Waarover gaat uw vraag? <span class="field__opt">(optioneel)</span></label>
                 <select id="f-dienst" name="dienst">
                   <option value="">Kies een dienst</option>
                   <option value="onderhoud">Onderhoud</option>
@@ -703,16 +710,16 @@
               </div>
 
               <button class="btn btn--primary btn--block" type="submit">
-                <span>Offerte aanvragen</span>
+                <span>Vraag voorbereiden</span>
                 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
               </button>
-              <p class="form__note">Demo-preview: dit formulier verstuurt nog niets naar WeFix Auto's. Na het invullen kunt u uw aanvraag wel via uw eigen e-mailprogramma versturen.</p>
+              <p class="form__note">Demo-preview: dit formulier verstuurt nog niets naar WeFix Auto's. Na het invullen kunt u uw vraag wel via uw eigen e-mailprogramma versturen.</p>
             </form>
 
             <div class="form-success" hidden tabindex="-1" data-form-success>
               <svg class="form-success__icon" aria-hidden="true"><use href="#i-check"/></svg>
-              <h3>Uw aanvraag staat klaar.</h3>
-              <p>Dit is een demo-preview: er is nog niets verzonden. Verstuur uw aanvraag in één klik via uw e-mailprogramma, of bel de vestiging.</p>
+              <h3>Uw vraag staat klaar.</h3>
+              <p>Dit is een demo-preview: er is nog niets verzonden. Verstuur uw vraag in één klik via uw e-mailprogramma, of bel de vestiging.</p>
               <dl class="form-success__summary" data-summary></dl>
               <div class="form-success__actions">
                 <a class="btn btn--primary" href="mailto:info@wefixautos.be" data-success-mail>
@@ -724,7 +731,7 @@
                   <span data-success-call-label>Bel de vestiging</span>
                 </a>
               </div>
-              <button class="link-button" type="button" data-form-reset>Aanvraag aanpassen</button>
+              <button class="link-button" type="button" data-form-reset>Vraag aanpassen</button>
             </div>
           </div>
         </div>
@@ -759,7 +766,7 @@
             <li><a href="reviews/">Reviews</a></li>
             <li><a href="vacatures/">Vacatures</a></li>
             <li><a href="#faq">Veelgestelde vragen</a></li>
-            <li><a href="#contact">Offerte aanvragen</a></li>
+            <li><a href="offerte/">Offerte aanvragen</a></li>
           </ul>
         </nav>
       </div>
@@ -793,10 +800,10 @@
         <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
         <span><span class="visually-hidden">Bel vestiging Brasschaat: </span><span aria-hidden="true">Brasschaat</span></span>
       </a>
-      <a class="action-bar__quote" href="#contact">Offerte</a>
+      <a class="action-bar__quote" href="offerte/">Offerte</a>
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Offerteaanvraag","services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Vraag via de website","services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
   </body>
 </html>

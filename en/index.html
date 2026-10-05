@@ -72,8 +72,8 @@
   ]
 }
     </script>
-    <script type="module" crossorigin src="../assets/main-C9Aez21Z.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-Q3YPwxXV.css">
+    <script type="module" crossorigin src="../assets/main-hDKE2-c8.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-DBofEZcl.css">
   </head>
 
   <body>
@@ -128,7 +128,7 @@
           </ul>
         </nav>
 
-        <a class="btn btn--primary btn--sm site-header__cta" href="#contact">Request a quote</a>
+        <a class="btn btn--primary btn--sm site-header__cta" href="../en/quote/">Request a quote</a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
           <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
@@ -148,7 +148,7 @@
           <li><a href="../en/reviews/">Reviews</a></li>
           <li><a href="#faq">Frequently asked questions</a></li>
           <li><a href="../en/careers/">Vacancies</a></li>
-          <li><a href="#contact">Contact &amp; quote</a></li>
+          <li><a href="#contact">Contact &amp; questions</a></li>
         </ul>
       </nav>
       <nav class="mobile-menu__lang" aria-label="Choose language">
@@ -192,7 +192,7 @@
           <p class="hero__lead">The place to go for all makes: servicing, tyres, brakes, air conditioning and repairs. At two branches on the Bredabaan.</p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">
+            <a class="btn btn--primary" href="../en/quote/" data-quote-page>
               <span>Request a quote</span>
               <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
@@ -602,9 +602,16 @@
         </div>
         <div class="container contact__inner">
           <div class="contact__intro reveal">
-            <p class="eyebrow">Contact &amp; quote</p>
-            <h2 id="contact-title">Request a free, no-obligation quote.</h2>
-            <p class="section__intro">Tell us which car you have and what needs to be done. Prefer to speak to someone right away?</p>
+            <p class="eyebrow">Contact &amp; questions</p>
+            <h2 id="contact-title">A question? We are happy to help.</h2>
+            <p class="section__intro">Ask your question using the form. Prefer to speak to someone right away?</p>
+            <div class="contact__quote">
+              <p><strong>Need a quote?</strong> Tell us in three short steps what your car needs.</p>
+              <a class="btn btn--primary" href="../en/quote/" data-quote-page>
+                <span>Request a quote</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
             <ul class="contact__direct">
               <li>
                 <a href="tel:+32477772499">
@@ -680,7 +687,7 @@
               </div>
 
               <div class="field" data-field="dienst">
-                <label for="f-dienst">What would you like a quote for? <span class="field__opt">(optional)</span></label>
+                <label for="f-dienst">What is your question about? <span class="field__opt">(optional)</span></label>
                 <select id="f-dienst" name="dienst">
                   <option value="">Choose a service</option>
                   <option value="onderhoud">Servicing</option>
@@ -703,16 +710,16 @@
               </div>
 
               <button class="btn btn--primary btn--block" type="submit">
-                <span>Request a quote</span>
+                <span>Prepare my question</span>
                 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
               </button>
-              <p class="form__note">Demo preview: this form does not send anything to WeFix Auto's yet. After filling it in, you can still send your request from your own e-mail program.</p>
+              <p class="form__note">Demo preview: this form does not send anything to WeFix Auto's yet. After filling it in, you can still send your question from your own e-mail program.</p>
             </form>
 
             <div class="form-success" hidden tabindex="-1" data-form-success>
               <svg class="form-success__icon" aria-hidden="true"><use href="#i-check"/></svg>
-              <h3>Your request is ready.</h3>
-              <p>This is a demo preview: nothing has been sent yet. Send your request in one click from your e-mail program, or call the branch.</p>
+              <h3>Your question is ready.</h3>
+              <p>This is a demo preview: nothing has been sent yet. Send your question in one click from your e-mail program, or call the branch.</p>
               <dl class="form-success__summary" data-summary></dl>
               <div class="form-success__actions">
                 <a class="btn btn--primary" href="mailto:info@wefixautos.be" data-success-mail>
@@ -724,7 +731,7 @@
                   <span data-success-call-label>Call the branch</span>
                 </a>
               </div>
-              <button class="link-button" type="button" data-form-reset>Edit request</button>
+              <button class="link-button" type="button" data-form-reset>Edit question</button>
             </div>
           </div>
         </div>
@@ -759,7 +766,7 @@
             <li><a href="../en/reviews/">Reviews</a></li>
             <li><a href="../en/careers/">Vacancies</a></li>
             <li><a href="#faq">Frequently asked questions</a></li>
-            <li><a href="#contact">Request a quote</a></li>
+            <li><a href="../en/quote/">Request a quote</a></li>
           </ul>
         </nav>
       </div>
@@ -793,10 +800,10 @@
         <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
         <span><span class="visually-hidden">Call the Brasschaat branch: </span><span aria-hidden="true">Brasschaat</span></span>
       </a>
-      <a class="action-bar__quote" href="#contact">Quote</a>
+      <a class="action-bar__quote" href="../en/quote/">Quote</a>
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Quote request","services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Question via the website","services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
   </body>
 </html>
