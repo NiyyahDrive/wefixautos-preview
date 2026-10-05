@@ -30,8 +30,8 @@
     <link rel="alternate" hreflang="x-default" href="../../occasiebanden/" >
 
     <link rel="icon" type="image/png" href="../../favicon.png">
-    <script type="module" crossorigin src="../../assets/main-hDKE2-c8.js"></script>
-    <link rel="stylesheet" crossorigin href="../../assets/main-DBofEZcl.css">
+    <script type="module" crossorigin src="../../assets/main-Y1Pq8arj.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-D9goMVxE.css">
   </head>
 
   <body>
@@ -162,6 +162,136 @@
         </div>
       </section>
 
+      <!-- ============ GUIDED SIZE PICKER ============ -->
+      <section class="section section--raised tyre-picker enhance-only" id="maatkiezer" aria-labelledby="maatkiezer-title" data-tyre-picker>
+        <div class="container">
+          <div class="tyre-picker__header">
+            <header class="section__head reveal">
+              <p class="eyebrow">Guided choice</p>
+              <h2 id="maatkiezer-title">Choose your tyre size step by step.</h2>
+              <p class="section__intro">Start with the size on your current tyre. We only show common passenger-car combinations here; if your size is missing, you can still enter it manually below.</p>
+            </header>
+            <p class="tyre-picker__help-action reveal">
+              <button class="link-button" type="button" aria-expanded="false" aria-controls="tyre-help-panel" data-tyre-help-toggle>Where can I find my tyre size?</button>
+            </p>
+          </div>
+
+          <div class="tyre-picker__panel reveal">
+            <div class="tyre-picker__flow">
+              <div class="field">
+                <label for="pick-width">Width</label>
+                <select id="pick-width" name="breedte" data-tyre-width>
+                  <option value="">Choose width</option>
+                  <option value="145">145</option>
+                  <option value="155">155</option>
+                  <option value="165">165</option>
+                  <option value="175">175</option>
+                  <option value="185">185</option>
+                  <option value="195">195</option>
+                  <option value="205">205</option>
+                  <option value="215">215</option>
+                  <option value="225">225</option>
+                  <option value="235">235</option>
+                  <option value="245">245</option>
+                  <option value="255">255</option>
+                  <option value="265">265</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-profile">Height / profile</label>
+                <select id="pick-profile" name="profiel" disabled data-tyre-profile>
+                  <option value="">Choose height</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-rim">Rim diameter / inch</label>
+                <select id="pick-rim" name="inch" disabled data-tyre-rim>
+                  <option value="">Choose inch size</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-season">Type of tyre</label>
+                <select id="pick-season" name="type" disabled data-tyre-season>
+                  <option value="">Choose tyre type</option>
+                  <option value="zomer">Summer tyres</option>
+                  <option value="winter">Winter tyres</option>
+                  <option value="vierseizoenen">All-season tyres</option>
+                  <option value="onbekend">I do not know yet</option>
+                </select>
+              </div>
+
+              <button class="btn btn--primary tyre-picker__submit" type="button" disabled data-tyre-picker-submit>
+                <span>Add this size to my request</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
+
+            <div class="tyre-picker__selection" aria-live="polite">
+              <p class="tyre-picker__selection-label">Selected size</p>
+              <output class="tyre-picker__selection-value" data-tyre-selection>Not selected yet</output>
+              <p class="tyre-picker__status" data-tyre-picker-status>Choose the width first.</p>
+            </div>
+          </div>
+
+          <section class="tyre-picker__help-panel" id="tyre-help-panel" aria-labelledby="tyre-help-title" hidden data-tyre-help-panel>
+            <div class="tyre-picker__help-copy">
+              <h3 id="tyre-help-title" tabindex="-1" data-tyre-help-heading>You can read the size on the tyre sidewall.</h3>
+              <p>You will find the code on the side of your current tyre. The handbook or door frame often shows the same format too.</p>
+              <p>The tyre size is on the sidewall of your current tyre and in the owner's manual of your car. It looks like this example.</p>
+            </div>
+            <figure class="size" data-size-guide>
+              <p class="size__code" aria-hidden="true"><span>205</span><span>/55</span><span>R</span><span>16</span><span>91</span><span>V</span></p>
+              <figcaption>
+                <p class="size__label">Example of a tyre size: <strong>205/55 R16 91V</strong></p>
+                <dl class="size__parts">
+                  <div>
+                  <dt>205</dt>
+                  <dd>Width of the tyre in millimetres</dd>
+                </div>
+                <div>
+                  <dt>55</dt>
+                  <dd>Height of the sidewall, as a percentage of the width</dd>
+                </div>
+                <div>
+                  <dt>R</dt>
+                  <dd>Radial tyre, the usual construction</dd>
+                </div>
+                <div>
+                  <dt>16</dt>
+                  <dd>Diameter of the rim in inches</dd>
+                </div>
+                <div>
+                  <dt>91</dt>
+                  <dd>Index for the load capacity</dd>
+                </div>
+                <div>
+                  <dt>V</dt>
+                  <dd>Index for the maximum speed</dd>
+                </div>
+                </dl>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="tyre-picker__alternatives" aria-labelledby="tyre-picker-alt-title">
+            <h3 class="tyre-picker__alternatives-title" id="tyre-picker-alt-title">Prefer a different route?</h3>
+            <article class="tyre-picker__alternative reveal">
+              <h3>I do not know my tyre size</h3>
+              <p>No problem. Tell us the make, model and year next, and we will help you from there.</p>
+              <button class="btn btn--ghost" type="button" data-tyre-picker-unknown>Go to vehicle details</button>
+            </article>
+            <article class="tyre-picker__alternative reveal">
+              <h3>My size is not listed here</h3>
+              <p>For an uncommon size, use the existing free-text field in the request form below.</p>
+              <button class="btn btn--ghost" type="button" data-tyre-picker-manual>Enter my size manually</button>
+            </article>
+          </section>
+        </div>
+      </section>
+
       <!-- ============ WHY USED TYRES ============ -->
       <section class="section" id="voordelen" aria-labelledby="voordelen-title">
         <div class="container">
@@ -281,50 +411,6 @@
         </div>
       </section>
 
-      <!-- ============ TYRE SIZE ============ -->
-      <section class="section" id="bandenmaat" aria-labelledby="bandenmaat-title">
-        <div class="container split">
-          <header class="section__head reveal">
-            <p class="eyebrow">Tyre size</p>
-            <h2 id="bandenmaat-title">Where do you find your tyre size?</h2>
-            <p class="section__intro">The tyre size is on the sidewall of your current tyre and in the owner's manual of your car. It looks like this example.</p>
-            <p class="size__help"><a href="#aanvraag">Not sure? Simply give the make, model and year of manufacture in the form, or call a branch.</a></p>
-          </header>
-          <figure class="size reveal" data-size-guide>
-            <p class="size__code" aria-hidden="true"><span>205</span><span>/55</span><span>R</span><span>16</span><span>91</span><span>V</span></p>
-            <figcaption>
-              <p class="size__label">Example of a tyre size: <strong>205/55 R16 91V</strong></p>
-              <dl class="size__parts">
-                <div>
-                  <dt>205</dt>
-                  <dd>Width of the tyre in millimetres</dd>
-                </div>
-                <div>
-                  <dt>55</dt>
-                  <dd>Height of the sidewall, as a percentage of the width</dd>
-                </div>
-                <div>
-                  <dt>R</dt>
-                  <dd>Radial tyre, the usual construction</dd>
-                </div>
-                <div>
-                  <dt>16</dt>
-                  <dd>Diameter of the rim in inches</dd>
-                </div>
-                <div>
-                  <dt>91</dt>
-                  <dd>Index for the load capacity</dd>
-                </div>
-                <div>
-                  <dt>V</dt>
-                  <dd>Index for the maximum speed</dd>
-                </div>
-              </dl>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
       <!-- ============ FAQ ============ -->
       <section class="section section--raised" id="faq" aria-labelledby="faq-title">
         <div class="container faq">
@@ -368,6 +454,7 @@
             <p class="eyebrow">Request</p>
             <h2 id="aanvraag-title">Request your used tyres.</h2>
             <p class="section__intro">It takes a minute. Only your name, your e-mail address and your tyre size or car are needed; the rest helps us to answer faster.</p>
+            <p class="form__guidance reveal" role="status" aria-live="polite" hidden data-request-guidance></p>
           </header>
 
           <div class="request">
@@ -684,6 +771,6 @@
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Question via the website","tyres":{"subject":"Used tyres request","intro":"I would like a proposal for used tyres.","labels":{"name":"Name","email":"E-mail address","phone":"Phone","car":"Car","year":"Year of manufacture","size":"Tyre size","quantity":"Number of tyres","season":"Type of tyre","branch":"Branch","timing":"When","note":"Comment"},"season":{"zomer":"Summer tyres","winter":"Winter tyres","vierseizoenen":"All-season tyres","onbekend":"I do not know yet"},"timing":{"snel":"As soon as possible","week":"This week","flexibel":"No rush"},"noBranch":"No preference","sizeUnknown":"Not known yet","empty":"Not filled in yet","recipient":"Your e-mail goes to {email}.","errors":{"nameRequired":"Fill in your name.","emailRequired":"Fill in your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","yearInvalid":"Enter the year of manufacture as four digits, or leave this field empty.","sizeInvalid":"This tyre size does not look right. Example: {example}","sizeOrCarRequired":"Fill in your tyre size, or otherwise the make and model of your car."}},"services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Question via the website","tyres":{"subject":"Used tyres request","intro":"I would like a proposal for used tyres.","labels":{"name":"Name","email":"E-mail address","phone":"Phone","car":"Car","year":"Year of manufacture","size":"Tyre size","quantity":"Number of tyres","season":"Type of tyre","branch":"Branch","timing":"When","note":"Comment"},"season":{"zomer":"Summer tyres","winter":"Winter tyres","vierseizoenen":"All-season tyres","onbekend":"I do not know yet"},"timing":{"snel":"As soon as possible","week":"This week","flexibel":"No rush"},"noBranch":"No preference","sizeUnknown":"Not known yet","empty":"Not filled in yet","recipient":"Your e-mail goes to {email}.","errors":{"nameRequired":"Fill in your name.","emailRequired":"Fill in your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","yearInvalid":"Enter the year of manufacture as four digits, or leave this field empty.","sizeInvalid":"This tyre size does not look right. Example: {example}","sizeOrCarRequired":"Fill in your tyre size, or otherwise the make and model of your car."},"picker":{"eyebrow":"Guided choice","title":"Choose your tyre size step by step.","intro":"Start with the size on your current tyre. We only show common passenger-car combinations here; if your size is missing, you can still enter it manually below.","labels":{"width":"Width","profile":"Height / profile","rim":"Rim diameter / inch","season":"Type of tyre","selectedSize":"Selected size"},"placeholders":{"width":"Choose width","profile":"Choose height","rim":"Choose inch size","season":"Choose tyre type"},"sizeEmpty":"Not selected yet","cta":"Add this size to my request","helpToggle":"Where can I find my tyre size?","helpTitle":"You can read the size on the tyre sidewall.","helpIntro":"You will find the code on the side of your current tyre. The handbook or door frame often shows the same format too.","alternativeTitle":"Prefer a different route?","unknownTitle":"I do not know my tyre size","unknownText":"No problem. Tell us the make, model and year next, and we will help you from there.","unknownCta":"Go to vehicle details","manualTitle":"My size is not listed here","manualText":"For an uncommon size, use the existing free-text field in the request form below.","manualCta":"Enter my size manually","status":{"width":"Choose the width first.","profile":"Then choose the profile.","rim":"Then choose the rim diameter.","season":"Choose the tyre type last.","ready":"Selected size: {size} · {season}."},"messages":{"prefilled":"We already filled in {size} and {season} in your request below.","needCar":"Do not know the size? Enter your make, model and year below.","manualEntry":"Is your size missing? Enter it manually below."}}},"services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
   </body>
 </html>

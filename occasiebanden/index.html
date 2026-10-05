@@ -30,8 +30,8 @@
     <link rel="alternate" hreflang="x-default" href="./" >
 
     <link rel="icon" type="image/png" href="../favicon.png">
-    <script type="module" crossorigin src="../assets/main-hDKE2-c8.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-DBofEZcl.css">
+    <script type="module" crossorigin src="../assets/main-Y1Pq8arj.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-D9goMVxE.css">
   </head>
 
   <body>
@@ -162,6 +162,136 @@
         </div>
       </section>
 
+      <!-- ============ GUIDED SIZE PICKER ============ -->
+      <section class="section section--raised tyre-picker enhance-only" id="maatkiezer" aria-labelledby="maatkiezer-title" data-tyre-picker>
+        <div class="container">
+          <div class="tyre-picker__header">
+            <header class="section__head reveal">
+              <p class="eyebrow">Begeleide keuze</p>
+              <h2 id="maatkiezer-title">Kies stap voor stap uw bandenmaat.</h2>
+              <p class="section__intro">Start met de maat van uw huidige band. Wij tonen hier alleen gangbare personenwagencombinaties; staat uw maat er niet tussen, dan kunt u ze hieronder gewoon handmatig invullen.</p>
+            </header>
+            <p class="tyre-picker__help-action reveal">
+              <button class="link-button" type="button" aria-expanded="false" aria-controls="tyre-help-panel" data-tyre-help-toggle>Waar vind ik mijn bandenmaat?</button>
+            </p>
+          </div>
+
+          <div class="tyre-picker__panel reveal">
+            <div class="tyre-picker__flow">
+              <div class="field">
+                <label for="pick-width">Breedte</label>
+                <select id="pick-width" name="breedte" data-tyre-width>
+                  <option value="">Kies breedte</option>
+                  <option value="145">145</option>
+                  <option value="155">155</option>
+                  <option value="165">165</option>
+                  <option value="175">175</option>
+                  <option value="185">185</option>
+                  <option value="195">195</option>
+                  <option value="205">205</option>
+                  <option value="215">215</option>
+                  <option value="225">225</option>
+                  <option value="235">235</option>
+                  <option value="245">245</option>
+                  <option value="255">255</option>
+                  <option value="265">265</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-profile">Hoogte / profiel</label>
+                <select id="pick-profile" name="profiel" disabled data-tyre-profile>
+                  <option value="">Kies hoogte</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-rim">Velgdiameter / inch</label>
+                <select id="pick-rim" name="inch" disabled data-tyre-rim>
+                  <option value="">Kies inch</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pick-season">Type band</label>
+                <select id="pick-season" name="type" disabled data-tyre-season>
+                  <option value="">Kies type band</option>
+                  <option value="zomer">Zomerbanden</option>
+                  <option value="winter">Winterbanden</option>
+                  <option value="vierseizoenen">Vierseizoenenbanden</option>
+                  <option value="onbekend">Weet ik nog niet</option>
+                </select>
+              </div>
+
+              <button class="btn btn--primary tyre-picker__submit" type="button" disabled data-tyre-picker-submit>
+                <span>Zet deze maat in mijn aanvraag</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
+
+            <div class="tyre-picker__selection" aria-live="polite">
+              <p class="tyre-picker__selection-label">Gekozen maat</p>
+              <output class="tyre-picker__selection-value" data-tyre-selection>Nog niet gekozen</output>
+              <p class="tyre-picker__status" data-tyre-picker-status>Kies eerst de breedte.</p>
+            </div>
+          </div>
+
+          <section class="tyre-picker__help-panel" id="tyre-help-panel" aria-labelledby="tyre-help-title" hidden data-tyre-help-panel>
+            <div class="tyre-picker__help-copy">
+              <h3 id="tyre-help-title" tabindex="-1" data-tyre-help-heading>Uw bandenmaat leest u af op de flank van de band.</h3>
+              <p>U vindt de code op de zijkant van uw huidige band. In het instructieboekje of op de deurstijl staat vaak hetzelfde formaat.</p>
+              <p>De bandenmaat staat op de zijkant van uw huidige band en in het instructieboekje van uw wagen. Ze ziet eruit zoals in dit voorbeeld.</p>
+            </div>
+            <figure class="size" data-size-guide>
+              <p class="size__code" aria-hidden="true"><span>205</span><span>/55</span><span>R</span><span>16</span><span>91</span><span>V</span></p>
+              <figcaption>
+                <p class="size__label">Voorbeeld van een bandenmaat: <strong>205/55 R16 91V</strong></p>
+                <dl class="size__parts">
+                  <div>
+                  <dt>205</dt>
+                  <dd>Breedte van de band in millimeter</dd>
+                </div>
+                <div>
+                  <dt>55</dt>
+                  <dd>Hoogte van de flank, in procent van de breedte</dd>
+                </div>
+                <div>
+                  <dt>R</dt>
+                  <dd>Radiaalband, de gangbare bouwwijze</dd>
+                </div>
+                <div>
+                  <dt>16</dt>
+                  <dd>Diameter van de velg in inch</dd>
+                </div>
+                <div>
+                  <dt>91</dt>
+                  <dd>Index voor het draagvermogen</dd>
+                </div>
+                <div>
+                  <dt>V</dt>
+                  <dd>Index voor de maximumsnelheid</dd>
+                </div>
+                </dl>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="tyre-picker__alternatives" aria-labelledby="tyre-picker-alt-title">
+            <h3 class="tyre-picker__alternatives-title" id="tyre-picker-alt-title">Liever een andere route?</h3>
+            <article class="tyre-picker__alternative reveal">
+              <h3>Ik weet mijn bandenmaat niet</h3>
+              <p>Geen probleem. Geef straks merk, model en bouwjaar door; dan kijken we mee.</p>
+              <button class="btn btn--ghost" type="button" data-tyre-picker-unknown>Ga naar wagengegevens</button>
+            </article>
+            <article class="tyre-picker__alternative reveal">
+              <h3>Mijn maat staat er niet tussen</h3>
+              <p>Voor een afwijkende of minder courante maat gebruikt u de bestaande vrije invoer in de aanvraag hieronder.</p>
+              <button class="btn btn--ghost" type="button" data-tyre-picker-manual>Vul mijn maat handmatig in</button>
+            </article>
+          </section>
+        </div>
+      </section>
+
       <!-- ============ WHY USED TYRES ============ -->
       <section class="section" id="voordelen" aria-labelledby="voordelen-title">
         <div class="container">
@@ -281,50 +411,6 @@
         </div>
       </section>
 
-      <!-- ============ TYRE SIZE ============ -->
-      <section class="section" id="bandenmaat" aria-labelledby="bandenmaat-title">
-        <div class="container split">
-          <header class="section__head reveal">
-            <p class="eyebrow">Bandenmaat</p>
-            <h2 id="bandenmaat-title">Waar vindt u uw bandenmaat?</h2>
-            <p class="section__intro">De bandenmaat staat op de zijkant van uw huidige band en in het instructieboekje van uw wagen. Ze ziet eruit zoals in dit voorbeeld.</p>
-            <p class="size__help"><a href="#aanvraag">Twijfelt u? Geef in het formulier gewoon merk, model en bouwjaar door, of bel een vestiging.</a></p>
-          </header>
-          <figure class="size reveal" data-size-guide>
-            <p class="size__code" aria-hidden="true"><span>205</span><span>/55</span><span>R</span><span>16</span><span>91</span><span>V</span></p>
-            <figcaption>
-              <p class="size__label">Voorbeeld van een bandenmaat: <strong>205/55 R16 91V</strong></p>
-              <dl class="size__parts">
-                <div>
-                  <dt>205</dt>
-                  <dd>Breedte van de band in millimeter</dd>
-                </div>
-                <div>
-                  <dt>55</dt>
-                  <dd>Hoogte van de flank, in procent van de breedte</dd>
-                </div>
-                <div>
-                  <dt>R</dt>
-                  <dd>Radiaalband, de gangbare bouwwijze</dd>
-                </div>
-                <div>
-                  <dt>16</dt>
-                  <dd>Diameter van de velg in inch</dd>
-                </div>
-                <div>
-                  <dt>91</dt>
-                  <dd>Index voor het draagvermogen</dd>
-                </div>
-                <div>
-                  <dt>V</dt>
-                  <dd>Index voor de maximumsnelheid</dd>
-                </div>
-              </dl>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
       <!-- ============ FAQ ============ -->
       <section class="section section--raised" id="faq" aria-labelledby="faq-title">
         <div class="container faq">
@@ -368,6 +454,7 @@
             <p class="eyebrow">Aanvraag</p>
             <h2 id="aanvraag-title">Vraag uw occasiebanden aan.</h2>
             <p class="section__intro">Een minuut werk. Enkel uw naam, uw e-mailadres en uw bandenmaat of wagen zijn nodig; de rest helpt ons om sneller te antwoorden.</p>
+            <p class="form__guidance reveal" role="status" aria-live="polite" hidden data-request-guidance></p>
           </header>
 
           <div class="request">
@@ -684,6 +771,6 @@
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Vraag via de website","tyres":{"subject":"Aanvraag occasiebanden","intro":"Graag een voorstel voor occasiebanden.","labels":{"name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","year":"Bouwjaar","size":"Bandenmaat","quantity":"Aantal banden","season":"Type band","branch":"Vestiging","timing":"Wanneer","note":"Opmerking"},"season":{"zomer":"Zomerbanden","winter":"Winterbanden","vierseizoenen":"Vierseizoenenbanden","onbekend":"Weet ik nog niet"},"timing":{"snel":"Zo snel mogelijk","week":"Deze week","flexibel":"Geen haast"},"noBranch":"Geen voorkeur","sizeUnknown":"Nog niet gekend","empty":"Nog niet ingevuld","recipient":"Uw e-mail gaat naar {email}.","errors":{"nameRequired":"Vul uw naam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","yearInvalid":"Vul het bouwjaar in als vier cijfers, of laat dit veld leeg.","sizeInvalid":"Deze bandenmaat lijkt niet te kloppen. Voorbeeld: {example}","sizeOrCarRequired":"Vul uw bandenmaat in, of anders merk en model van uw wagen."}},"services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Vraag via de website","tyres":{"subject":"Aanvraag occasiebanden","intro":"Graag een voorstel voor occasiebanden.","labels":{"name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","year":"Bouwjaar","size":"Bandenmaat","quantity":"Aantal banden","season":"Type band","branch":"Vestiging","timing":"Wanneer","note":"Opmerking"},"season":{"zomer":"Zomerbanden","winter":"Winterbanden","vierseizoenen":"Vierseizoenenbanden","onbekend":"Weet ik nog niet"},"timing":{"snel":"Zo snel mogelijk","week":"Deze week","flexibel":"Geen haast"},"noBranch":"Geen voorkeur","sizeUnknown":"Nog niet gekend","empty":"Nog niet ingevuld","recipient":"Uw e-mail gaat naar {email}.","errors":{"nameRequired":"Vul uw naam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","yearInvalid":"Vul het bouwjaar in als vier cijfers, of laat dit veld leeg.","sizeInvalid":"Deze bandenmaat lijkt niet te kloppen. Voorbeeld: {example}","sizeOrCarRequired":"Vul uw bandenmaat in, of anders merk en model van uw wagen."},"picker":{"eyebrow":"Begeleide keuze","title":"Kies stap voor stap uw bandenmaat.","intro":"Start met de maat van uw huidige band. Wij tonen hier alleen gangbare personenwagencombinaties; staat uw maat er niet tussen, dan kunt u ze hieronder gewoon handmatig invullen.","labels":{"width":"Breedte","profile":"Hoogte / profiel","rim":"Velgdiameter / inch","season":"Type band","selectedSize":"Gekozen maat"},"placeholders":{"width":"Kies breedte","profile":"Kies hoogte","rim":"Kies inch","season":"Kies type band"},"sizeEmpty":"Nog niet gekozen","cta":"Zet deze maat in mijn aanvraag","helpToggle":"Waar vind ik mijn bandenmaat?","helpTitle":"Uw bandenmaat leest u af op de flank van de band.","helpIntro":"U vindt de code op de zijkant van uw huidige band. In het instructieboekje of op de deurstijl staat vaak hetzelfde formaat.","alternativeTitle":"Liever een andere route?","unknownTitle":"Ik weet mijn bandenmaat niet","unknownText":"Geen probleem. Geef straks merk, model en bouwjaar door; dan kijken we mee.","unknownCta":"Ga naar wagengegevens","manualTitle":"Mijn maat staat er niet tussen","manualText":"Voor een afwijkende of minder courante maat gebruikt u de bestaande vrije invoer in de aanvraag hieronder.","manualCta":"Vul mijn maat handmatig in","status":{"width":"Kies eerst de breedte.","profile":"Kies daarna het profiel.","rim":"Kies daarna de velgdiameter.","season":"Kies als laatste het type band.","ready":"Gekozen maat: {size} · {season}."},"messages":{"prefilled":"We vulden {size} en {season} al in bij uw aanvraag hieronder.","needCar":"Kent u de maat niet? Geef hieronder merk, model en bouwjaar door.","manualEntry":"Staat uw maat er niet tussen? Vul ze hieronder handmatig in."}}},"services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
   </body>
 </html>
