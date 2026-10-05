@@ -12,6 +12,8 @@
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="nl_BE">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="fr_BE">
     <meta property="og:site_name" content="WeFix Auto's">
     <meta property="og:title" content="WeFix Auto's | Autogarage in Antwerpen (Merksem) en Brasschaat">
     <meta property="og:description" content="Snelle service, eerlijke prijzen. Onderhoud, banden, remmen, airco en herstellingen voor alle automerken, in twee vestigingen op de Bredabaan.">
@@ -21,45 +23,57 @@
     <meta property="og:image:alt" content="De werkplaats van WeFix Auto's met wagens en het WeFix-spandoek aan de muur.">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Same page in the other languages. Relative on purpose: valid under any host or sub-path. -->
+    <link rel="alternate" hreflang="nl-BE" href="./" >
+    <link rel="alternate" hreflang="en" href="en/" >
+    <link rel="alternate" hreflang="fr-BE" href="fr/" >
+    <link rel="alternate" hreflang="x-default" href="./" >
+
+    <link rel="icon" type="image/png" href="./favicon.png">
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "AutoRepair",
-            "name": "WeFix Auto's Antwerpen",
-            "email": "antwerpen@wefixautos.be",
-            "telephone": "+32477772499",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Bredabaan 105",
-              "postalCode": "2170",
-              "addressLocality": "Merksem",
-              "addressCountry": "BE"
-            },
-            "openingHours": ["Mo-Fr 09:00-18:30", "Sa 10:00-17:00"]
-          },
-          {
-            "@type": "AutoRepair",
-            "name": "WeFix Auto's Brasschaat",
-            "email": "brasschaat@wefixautos.be",
-            "telephone": "+3232724675",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Bredabaan 737",
-              "postalCode": "2930",
-              "addressLocality": "Brasschaat",
-              "addressCountry": "BE"
-            },
-            "openingHours": ["Mo-Fr 08:30-18:00", "Sa 09:00-12:00"]
-          }
-        ]
-      }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AutoRepair",
+      "name": "WeFix Auto's Antwerpen",
+      "email": "antwerpen@wefixautos.be",
+      "telephone": "+32477772499",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bredabaan 105",
+        "postalCode": "2170",
+        "addressLocality": "Merksem",
+        "addressCountry": "BE"
+      },
+      "openingHours": [
+        "Mo-Fr 09:00-18:30",
+        "Sa 10:00-17:00"
+      ]
+    },
+    {
+      "@type": "AutoRepair",
+      "name": "WeFix Auto's Brasschaat",
+      "email": "brasschaat@wefixautos.be",
+      "telephone": "+3232724675",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bredabaan 737",
+        "postalCode": "2930",
+        "addressLocality": "Brasschaat",
+        "addressCountry": "BE"
+      },
+      "openingHours": [
+        "Mo-Fr 08:30-18:00",
+        "Sa 09:00-12:00"
+      ]
+    }
+  ]
+}
     </script>
-    <script type="module" crossorigin src="./assets/index-BJKr3vd7.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-5Ao-nEXw.css">
+    <script type="module" crossorigin src="./assets/main-BQiW9d16.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-C4vYzIZL.css">
   </head>
 
   <body>
@@ -72,6 +86,8 @@
         <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
         <symbol id="i-route" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
         <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-external" viewBox="0 0 24 24"><path d="M8 7h9v9M17 7 6.5 17.5"/></symbol>
+        <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19.5 8.5l-4-4L4 16v4zM13.5 6.5l4 4"/></symbol>
         <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
         <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
         <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
@@ -99,8 +115,16 @@
             <li><a href="#waarom">Waarom WeFix</a></li>
             <li><a href="#vestigingen">Vestigingen</a></li>
             <li><a href="#werkwijze">Werkwijze</a></li>
-            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="reviews/">Reviews</a></li>
             <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="lang" aria-label="Taal">
+          <ul class="lang__list">
+            <li><a href="./" lang="nl-BE" hreflang="nl-BE" aria-current="true">NL<span class="visually-hidden"> – Nederlands</span></a></li>
+            <li><a href="en/" lang="en" hreflang="en">EN<span class="visually-hidden"> – English</span></a></li>
+            <li><a href="fr/" lang="fr-BE" hreflang="fr-BE">FR<span class="visually-hidden"> – Français</span></a></li>
           </ul>
         </nav>
 
@@ -120,9 +144,16 @@
           <li><a href="#waarom">Waarom WeFix</a></li>
           <li><a href="#vestigingen">Vestigingen</a></li>
           <li><a href="#werkwijze">Werkwijze</a></li>
-          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="reviews/">Reviews</a></li>
           <li><a href="#faq">Veelgestelde vragen</a></li>
           <li><a href="#contact">Contact &amp; offerte</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-menu__lang" aria-label="Taal kiezen">
+        <ul class="lang__list lang__list--full">
+            <li><a href="./" lang="nl-BE" hreflang="nl-BE" aria-current="true">Nederlands</a></li>
+            <li><a href="en/" lang="en" hreflang="en">English</a></li>
+            <li><a href="fr/" lang="fr-BE" hreflang="fr-BE">Français</a></li>
         </ul>
       </nav>
       <div class="mobile-menu__actions">
@@ -167,9 +198,7 @@
           </div>
 
           <a class="rating-chip" href="#reviews">
-            <span class="stars" aria-hidden="true">
-              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
-            </span>
+            <span class="stars" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
             <span><strong>4,9/5 op Google</strong> <span aria-hidden="true">·</span> 200+ Google-reviews</span>
           </a>
         </div>
@@ -212,7 +241,7 @@
         </div>
       </section>
 
-      <!-- ============ DIENSTEN ============ -->
+      <!-- ============ SERVICES ============ -->
       <section class="section" id="diensten" aria-labelledby="diensten-title">
         <div class="container">
           <header class="section__head reveal">
@@ -226,55 +255,55 @@
               <svg class="service__icon" aria-hidden="true"><use href="#i-wrench"/></svg>
               <h3>Onderhoud</h3>
               <p>Klein en groot onderhoud: oliewissel, filters en een controle van remmen, banden en ophanging.</p>
-              <a class="service__link" href="#contact" data-service="Onderhoud">Offerte voor onderhoud <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="onderhoud">Offerte voor onderhoud <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-tire"/></svg>
               <h3>Banden</h3>
               <p>Vervangen, wisselen, balanceren en herstellen. Ook voor uw seizoenswissel naar zomer- of winterbanden.</p>
-              <a class="service__link" href="#contact" data-service="Banden">Offerte voor banden <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="banden">Offerte voor banden <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-brake"/></svg>
               <h3>Remmen</h3>
               <p>Remblokken, remschijven en remklauwen nakijken of vervangen, en remvloeistof controleren.</p>
-              <a class="service__link" href="#contact" data-service="Remmen">Offerte voor remmen <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="remmen">Offerte voor remmen <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-snow"/></svg>
               <h3>Airco</h3>
               <p>Airco-onderhoud en bijvullen van het koudemiddel. Koelt hij snel weer minder? Dan sporen we het lek op.</p>
-              <a class="service__link" href="#contact" data-service="Airco">Offerte voor airco <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="airco">Offerte voor airco <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-tools"/></svg>
               <h3>Herstellingen</h3>
               <p>Herstellingen voor alle automerken. We stellen de oorzaak vast en bespreken eerst de oplossing met u.</p>
-              <a class="service__link" href="#contact" data-service="Herstellingen">Offerte voor een herstelling <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="herstellingen">Offerte voor een herstelling <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-clipboard"/></svg>
               <h3>Autokeuring</h3>
               <p>Nazicht vóór de keuring, lichten afstellen en vervangen. Geen tijd? Wij bieden uw wagen aan bij de autokeuring.</p>
-              <a class="service__link" href="#contact" data-service="Autokeuring (nazicht)">Offerte voor een nazicht <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="autokeuring">Offerte voor een nazicht <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-battery"/></svg>
               <h3>Batterij</h3>
               <p>We testen capaciteit en startvermogen en vervangen uw autobatterij door het juiste type, ook start-stop.</p>
-              <a class="service__link" href="#contact" data-service="Batterij">Offerte voor een batterij <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="batterij">Offerte voor een batterij <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
             <li class="service reveal">
               <svg class="service__icon" aria-hidden="true"><use href="#i-belt"/></svg>
               <h3>Distributie</h3>
               <p>Distributieriem of -ketting controleren en tijdig vervangen, om zware motorschade te vermijden.</p>
-              <a class="service__link" href="#contact" data-service="Distributieriem of -ketting">Offerte voor distributie <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="service__link" href="#contact" data-service="distributie">Offerte voor distributie <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- ============ OCCASIEBANDEN FEATURE ============ -->
+      <!-- ============ USED TYRES FEATURE ============ -->
       <section class="feature" aria-labelledby="occasie-title">
         <div class="feature__media reveal">
           <img src="./assets/bandenstock-gang-DdMMsrni.jpg" alt="Gang tussen hoge stapels banden in het bandenmagazijn van WeFix Auto's." width="1168" height="1300" loading="lazy">
@@ -288,14 +317,14 @@
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Professioneel gebalanceerd bij montage</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Merken zoals Michelin, Continental, Bridgestone en Pirelli</li>
           </ul>
-          <a class="btn btn--primary" href="#contact" data-service="Occasiebanden">
+          <a class="btn btn--primary" href="#contact" data-service="occasiebanden">
             <span>Vraag uw bandenmaat aan</span>
             <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
           </a>
         </div>
       </section>
 
-      <!-- ============ WAAROM ============ -->
+      <!-- ============ WHY WEFIX ============ -->
       <section class="section" id="waarom" aria-labelledby="waarom-title">
         <div class="container why">
           <div class="why__media reveal">
@@ -337,7 +366,7 @@
         </div>
       </section>
 
-      <!-- ============ VESTIGINGEN ============ -->
+      <!-- ============ BRANCHES ============ -->
       <section class="section section--raised" id="vestigingen" aria-labelledby="vestigingen-title">
         <div class="container">
           <header class="section__head reveal">
@@ -348,77 +377,100 @@
 
           <div class="locations">
             <article class="location reveal" aria-labelledby="loc-antwerpen" data-location="antwerpen">
-              <p class="location__tag">Vestiging 1</p>
-              <h3 id="loc-antwerpen">Antwerpen <span>/ Merksem</span></h3>
-              <address>Bredabaan 105<br>2170 Merksem</address>
-              <table class="hours">
-                <caption><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Openingsuren</caption>
-                <tbody>
-                  <tr data-days="1,2,3,4,5"><th scope="row">Maandag – vrijdag</th><td>09:00 – 18:30</td></tr>
-                  <tr data-days="6"><th scope="row">Zaterdag</th><td>10:00 – 17:00</td></tr>
-                </tbody>
-              </table>
-              <ul class="location__actions">
-                <li>
-                  <a class="btn btn--primary" href="tel:+32477772499">
-                    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
-                    <span>Bel <span class="visually-hidden">vestiging Merksem: </span>+32 477 77 24 99</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn--ghost" href="mailto:antwerpen@wefixautos.be">
-                    <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
-                    <span>antwerpen@wefixautos.be</span>
-                  </a>
-                </li>
-                <li>
+              <div class="location__body">
+                <p class="location__tag">Vestiging 1</p>
+                <h3 id="loc-antwerpen">Antwerpen <span>/ Merksem</span></h3>
+                <address>Bredabaan 105<br>2170 Merksem</address>
+                <table class="hours">
+                  <caption><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Openingsuren</caption>
+                  <tbody>
+                    <tr data-days="1,2,3,4,5"><th scope="row" data-today="Vandaag">Maandag – vrijdag</th><td>09:00 – 18:30</td></tr>
+                    <tr data-days="6"><th scope="row" data-today="Vandaag">Zaterdag</th><td>10:00 – 17:00</td></tr>
+                  </tbody>
+                </table>
+                <ul class="location__actions">
+                  <li>
+                    <a class="btn btn--primary" href="tel:+32477772499">
+                      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                      <span>Bel <span class="visually-hidden">vestiging Merksem: </span>+32 477 77 24 99</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn btn--ghost" href="mailto:antwerpen@wefixautos.be">
+                      <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                      <span>antwerpen@wefixautos.be</span>
+                    </a>
+                  </li>
+                  <li>
                   <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bredabaan+105%2C+2170+Merksem" target="_blank" rel="noopener noreferrer">
                     <svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>
-                    <span>Route naar Merksem <span class="visually-hidden">(opent Google Maps in een nieuw tabblad)</span></span>
+                    <span>Route vanaf mijn locatie<span class="visually-hidden"> naar Merksem (opent Google Maps in een nieuw tabblad)</span></span>
                   </a>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
+              <figure class="location__map">
+                <div class="map-frame">
+                  <iframe src="https://www.google.com/maps?q=Bredabaan+105%2C+2170+Merksem&amp;z=15&amp;hl=nl&amp;output=embed" title="Kaart van WeFix Auto's Merksem, Bredabaan 105, 2170 Merksem" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-map="antwerpen"></iframe>
+                </div>
+                <figcaption>
+                  <span>Kaart: Google Maps</span>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=WeFix+Auto's%2C+Bredabaan+105%2C+2170+Merksem" target="_blank" rel="noopener noreferrer">Openen in Google Maps<span class="visually-hidden"> vestiging Merksem (opent Google Maps in een nieuw tabblad)</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                </figcaption>
+              </figure>
             </article>
 
             <article class="location reveal" aria-labelledby="loc-brasschaat" data-location="brasschaat">
-              <p class="location__tag">Vestiging 2</p>
-              <h3 id="loc-brasschaat">Brasschaat</h3>
-              <address>Bredabaan 737<br>2930 Brasschaat</address>
-              <table class="hours">
-                <caption><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Openingsuren</caption>
-                <tbody>
-                  <tr data-days="1,2,3,4,5"><th scope="row">Maandag – vrijdag</th><td>08:30 – 18:00</td></tr>
-                  <tr data-days="6"><th scope="row">Zaterdag</th><td>09:00 – 12:00</td></tr>
-                </tbody>
-              </table>
-              <ul class="location__actions">
-                <li>
-                  <a class="btn btn--primary" href="tel:+3232724675">
-                    <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
-                    <span>Bel <span class="visually-hidden">vestiging Brasschaat: </span>+32 3 272 46 75</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn--ghost" href="mailto:brasschaat@wefixautos.be">
-                    <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
-                    <span>brasschaat@wefixautos.be</span>
-                  </a>
-                </li>
-                <li>
+              <div class="location__body">
+                <p class="location__tag">Vestiging 2</p>
+                <h3 id="loc-brasschaat">Brasschaat</h3>
+                <address>Bredabaan 737<br>2930 Brasschaat</address>
+                <table class="hours">
+                  <caption><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Openingsuren</caption>
+                  <tbody>
+                    <tr data-days="1,2,3,4,5"><th scope="row" data-today="Vandaag">Maandag – vrijdag</th><td>08:30 – 18:00</td></tr>
+                    <tr data-days="6"><th scope="row" data-today="Vandaag">Zaterdag</th><td>09:00 – 12:00</td></tr>
+                  </tbody>
+                </table>
+                <ul class="location__actions">
+                  <li>
+                    <a class="btn btn--primary" href="tel:+3232724675">
+                      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                      <span>Bel <span class="visually-hidden">vestiging Brasschaat: </span>+32 3 272 46 75</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn btn--ghost" href="mailto:brasschaat@wefixautos.be">
+                      <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                      <span>brasschaat@wefixautos.be</span>
+                    </a>
+                  </li>
+                  <li>
                   <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bredabaan+737%2C+2930+Brasschaat" target="_blank" rel="noopener noreferrer">
                     <svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>
-                    <span>Route naar Brasschaat <span class="visually-hidden">(opent Google Maps in een nieuw tabblad)</span></span>
+                    <span>Route vanaf mijn locatie<span class="visually-hidden"> naar Brasschaat (opent Google Maps in een nieuw tabblad)</span></span>
                   </a>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
+              <figure class="location__map">
+                <div class="map-frame">
+                  <iframe src="https://www.google.com/maps?q=Bredabaan+737%2C+2930+Brasschaat&amp;z=15&amp;hl=nl&amp;output=embed" title="Kaart van WeFix Auto's Brasschaat, Bredabaan 737, 2930 Brasschaat" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-map="brasschaat"></iframe>
+                </div>
+                <figcaption>
+                  <span>Kaart: Google Maps</span>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=WeFix+Auto's%2C+Bredabaan+737%2C+2930+Brasschaat" target="_blank" rel="noopener noreferrer">Openen in Google Maps<span class="visually-hidden"> vestiging Brasschaat (opent Google Maps in een nieuw tabblad)</span> <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+                </figcaption>
+              </figure>
             </article>
           </div>
 
+          <p class="locations__note reveal"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span>‘Route vanaf mijn locatie’ opent Google Maps. Daar vult u uw vertrekpunt in of gebruikt u uw huidige locatie. Deze website vraagt uw locatie zelf niet op.</span></p>
           <p class="locations__general reveal">Algemene vraag? Mail naar <a href="mailto:info@wefixautos.be">info@wefixautos.be</a>.</p>
         </div>
       </section>
 
-      <!-- ============ WERKWIJZE ============ -->
+      <!-- ============ PROCESS ============ -->
       <section class="section process" id="werkwijze" aria-labelledby="werkwijze-title">
         <div class="process__media" aria-hidden="true">
           <img src="./assets/technieker-hefbrug-CktkFYGQ.jpg" alt="" width="1400" height="1050" loading="lazy">
@@ -449,7 +501,7 @@
         </div>
       </section>
 
-      <!-- ============ REVIEWS ============ -->
+      <!-- ============ REVIEWS PREVIEW ============ -->
       <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
         <div class="reviews__media" aria-hidden="true">
           <img src="./assets/bandenstock-rekken-DhLrgfOp.jpg" alt="" width="975" height="1300" loading="lazy">
@@ -459,30 +511,39 @@
             <p class="eyebrow">Reviews</p>
             <h2 id="reviews-title">Klanten geven ons 4,9 op 5.</h2>
             <p class="score">
-              <span class="score__num">4,9</span>
+              <span class="score__num" aria-hidden="true">4,9<small>/5</small></span>
               <span class="score__meta">
-                <span class="stars" role="img" aria-label="4,9 op 5 sterren">
-                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-                </span>
+                <span class="stars-meter" role="img" aria-label="4,9 op 5 sterren"><span class="stars-meter__row"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><span class="stars-meter__row stars-meter__row--fill"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span></span>
                 <span>op Google, op basis van 200+ Google-reviews</span>
               </span>
             </p>
           </div>
 
-          <div class="quotes">
-            <figure class="quote reveal">
+          <div class="reviews__voices">
+            <figure class="quote quote--lead reveal" data-quote="sanne">
               <blockquote>
                 <p>Ongelooflijke klantvriendelijkheid, eerlijkheid over de staat van je wagen. En snelle service. Ik word vaste klant zonder twijfel!</p>
               </blockquote>
-              <figcaption>Sanne M.</figcaption>
+              <figcaption><span class="quote__author">Sanne M.</span></figcaption>
             </figure>
-            <figure class="quote reveal">
+            <figure class="quote quote--minor reveal" data-quote="rj">
               <blockquote>
                 <p>Geweldige service toen ik in een moeilijke situatie zat. […] Sterk aanbevelen!</p>
               </blockquote>
-              <figcaption>R. J.</figcaption>
+              <figcaption><span class="quote__author">R. J.</span></figcaption>
             </figure>
-            <p class="quotes__source reveal">Klantreacties overgenomen van wefixautos.be.</p>
+            <p class="quotes__source reveal">Klantreactie overgenomen van wefixautos.be.</p>
+          </div>
+
+          <div class="reviews__actions reveal">
+            <a class="btn btn--primary" href="reviews/">
+              <span>Alles over onze reviews</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="reviews/#schrijven">
+              <svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>
+              <span>Zelf een review schrijven</span>
+            </a>
           </div>
         </div>
       </section>
@@ -617,16 +678,16 @@
                 <label for="f-dienst">Waarvoor wilt u een offerte? <span class="field__opt">(optioneel)</span></label>
                 <select id="f-dienst" name="dienst">
                   <option value="">Kies een dienst</option>
-                  <option>Onderhoud</option>
-                  <option>Banden</option>
-                  <option>Occasiebanden</option>
-                  <option>Remmen</option>
-                  <option>Airco</option>
-                  <option>Herstellingen</option>
-                  <option>Autokeuring (nazicht)</option>
-                  <option>Batterij</option>
-                  <option>Distributieriem of -ketting</option>
-                  <option>Iets anders</option>
+                  <option value="onderhoud">Onderhoud</option>
+                  <option value="banden">Banden</option>
+                  <option value="occasiebanden">Occasiebanden</option>
+                  <option value="remmen">Remmen</option>
+                  <option value="airco">Airco</option>
+                  <option value="herstellingen">Herstellingen</option>
+                  <option value="autokeuring">Autokeuring (nazicht)</option>
+                  <option value="batterij">Batterij</option>
+                  <option value="distributie">Distributieriem of -ketting</option>
+                  <option value="anders">Iets anders</option>
                 </select>
               </div>
 
@@ -689,6 +750,7 @@
           <ul class="site-footer__links">
             <li><a href="#diensten">Diensten</a></li>
             <li><a href="#vestigingen">Vestigingen</a></li>
+            <li><a href="reviews/">Reviews</a></li>
             <li><a href="#faq">Veelgestelde vragen</a></li>
             <li><a href="#contact">Offerte aanvragen</a></li>
           </ul>
@@ -696,7 +758,7 @@
       </div>
       <div class="container site-footer__base">
         <p>© WeFix Auto's</p>
-        <p class="site-footer__preview">Concept-preview van een redesign. De officiële website is <a href="https://wefixautos.be/" rel="noopener noreferrer">wefixautos.be</a>.</p>
+        <p class="site-footer__preview" data-preview-notice>Concept-preview van een redesign. De officiële website is <a href="https://wefixautos.be/" rel="noopener noreferrer">wefixautos.be</a>.</p>
       </div>
     </footer>
 
@@ -704,14 +766,16 @@
     <div class="action-bar" data-action-bar>
       <a class="action-bar__call" href="tel:+32477772499">
         <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
-        <span><span class="visually-hidden">Bel vestiging </span>Merksem</span>
+        <span><span class="visually-hidden">Bel vestiging Merksem: </span><span aria-hidden="true">Merksem</span></span>
       </a>
       <a class="action-bar__call" href="tel:+3232724675">
         <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
-        <span><span class="visually-hidden">Bel vestiging </span>Brasschaat</span>
+        <span><span class="visually-hidden">Bel vestiging Brasschaat: </span><span aria-hidden="true">Brasschaat</span></span>
       </a>
       <a class="action-bar__quote" href="#contact">Offerte</a>
     </div>
 
+    <!-- Strings for the client-side scripts, in the page language. -->
+    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Offerteaanvraag","services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
   </body>
 </html>
