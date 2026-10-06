@@ -30,8 +30,8 @@
     <link rel="alternate" hreflang="x-default" href="./" >
 
     <link rel="icon" type="image/png" href="../favicon.png">
-    <script type="module" crossorigin src="../assets/main-D6KC5mRi.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-CuVaoP8R.css">
+    <script type="module" crossorigin src="../assets/main-X_Snp1wi.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-C3KEGdie.css">
   </head>
 
   <body>
@@ -168,8 +168,8 @@
           <div class="tyre-picker__header">
             <header class="section__head reveal">
               <p class="eyebrow">Begeleide keuze</p>
-              <h2 id="maatkiezer-title">Kies uw bandenmaat uit de lijst.</h2>
-              <p class="section__intro">Kies de maat van uw huidige band uit de lijst en duid daarna het type band aan. De lijst toont gangbare maten voor personenwagens en SUV's, geen voorraad: wat beschikbaar is, bevestigt de vestiging. Staat uw maat er niet tussen? Vul ze dan hieronder handmatig in.</p>
+              <h2 id="maatkiezer-title">Zoek en kies uw bandenmaat.</h2>
+              <p class="section__intro">Zoek uw maat of blader per breedte, en kies daarna het type band.</p>
             </header>
             <p class="tyre-picker__help-action reveal">
               <button class="link-button" type="button" aria-expanded="false" aria-controls="tyre-help-panel" data-tyre-help-toggle>Waar vind ik mijn bandenmaat?</button>
@@ -178,137 +178,495 @@
 
           <div class="tyre-picker__panel reveal">
             <div class="tyre-picker__flow">
-              <div class="field">
-                <label for="pick-size">Bandenmaat</label>
-                <select id="pick-size" name="maat" aria-describedby="pick-size-help" data-tyre-size>
-                  <option value="">Kies uw bandenmaat</option>
-                  <optgroup label="Breedte 145 mm">
-                    <option value="145/70 R13">145/70 R13</option>
-                  </optgroup>
-                  <optgroup label="Breedte 155 mm">
-                    <option value="155/65 R13">155/65 R13</option>
-                    <option value="155/65 R14">155/65 R14</option>
-                    <option value="155/70 R13">155/70 R13</option>
-                  </optgroup>
-                  <optgroup label="Breedte 165 mm">
-                    <option value="165/60 R14">165/60 R14</option>
-                    <option value="165/65 R14">165/65 R14</option>
-                    <option value="165/65 R15">165/65 R15</option>
-                    <option value="165/70 R14">165/70 R14</option>
-                  </optgroup>
-                  <optgroup label="Breedte 175 mm">
-                    <option value="175/55 R15">175/55 R15</option>
-                    <option value="175/60 R14">175/60 R14</option>
-                    <option value="175/60 R15">175/60 R15</option>
-                    <option value="175/65 R14">175/65 R14</option>
-                    <option value="175/65 R15">175/65 R15</option>
-                    <option value="175/70 R13">175/70 R13</option>
-                    <option value="175/70 R14">175/70 R14</option>
-                  </optgroup>
-                  <optgroup label="Breedte 185 mm">
-                    <option value="185/50 R16">185/50 R16</option>
-                    <option value="185/55 R15">185/55 R15</option>
-                    <option value="185/55 R16">185/55 R16</option>
-                    <option value="185/60 R14">185/60 R14</option>
-                    <option value="185/60 R15">185/60 R15</option>
-                    <option value="185/65 R14">185/65 R14</option>
-                    <option value="185/65 R15">185/65 R15</option>
-                    <option value="185/70 R14">185/70 R14</option>
-                  </optgroup>
-                  <optgroup label="Breedte 195 mm">
-                    <option value="195/45 R16">195/45 R16</option>
-                    <option value="195/50 R15">195/50 R15</option>
-                    <option value="195/50 R16">195/50 R16</option>
-                    <option value="195/55 R15">195/55 R15</option>
-                    <option value="195/55 R16">195/55 R16</option>
-                    <option value="195/60 R15">195/60 R15</option>
-                    <option value="195/60 R16">195/60 R16</option>
-                    <option value="195/65 R15">195/65 R15</option>
-                  </optgroup>
-                  <optgroup label="Breedte 205 mm">
-                    <option value="205/45 R16">205/45 R16</option>
-                    <option value="205/45 R17">205/45 R17</option>
-                    <option value="205/50 R16">205/50 R16</option>
-                    <option value="205/50 R17">205/50 R17</option>
-                    <option value="205/55 R16">205/55 R16</option>
-                    <option value="205/55 R17">205/55 R17</option>
-                    <option value="205/60 R16">205/60 R16</option>
-                    <option value="205/65 R15">205/65 R15</option>
-                    <option value="205/65 R16">205/65 R16</option>
-                  </optgroup>
-                  <optgroup label="Breedte 215 mm">
-                    <option value="215/40 R17">215/40 R17</option>
-                    <option value="215/40 R18">215/40 R18</option>
-                    <option value="215/45 R17">215/45 R17</option>
-                    <option value="215/45 R18">215/45 R18</option>
-                    <option value="215/50 R17">215/50 R17</option>
-                    <option value="215/55 R16">215/55 R16</option>
-                    <option value="215/55 R17">215/55 R17</option>
-                    <option value="215/55 R18">215/55 R18</option>
-                    <option value="215/60 R16">215/60 R16</option>
-                    <option value="215/60 R17">215/60 R17</option>
-                    <option value="215/65 R16">215/65 R16</option>
-                    <option value="215/65 R17">215/65 R17</option>
-                    <option value="215/70 R16">215/70 R16</option>
-                  </optgroup>
-                  <optgroup label="Breedte 225 mm">
-                    <option value="225/35 R19">225/35 R19</option>
-                    <option value="225/40 R18">225/40 R18</option>
-                    <option value="225/45 R17">225/45 R17</option>
-                    <option value="225/45 R18">225/45 R18</option>
-                    <option value="225/50 R17">225/50 R17</option>
-                    <option value="225/50 R18">225/50 R18</option>
-                    <option value="225/55 R16">225/55 R16</option>
-                    <option value="225/55 R17">225/55 R17</option>
-                    <option value="225/55 R18">225/55 R18</option>
-                    <option value="225/55 R19">225/55 R19</option>
-                    <option value="225/60 R16">225/60 R16</option>
-                    <option value="225/60 R17">225/60 R17</option>
-                    <option value="225/60 R18">225/60 R18</option>
-                    <option value="225/65 R17">225/65 R17</option>
-                  </optgroup>
-                  <optgroup label="Breedte 235 mm">
-                    <option value="235/35 R19">235/35 R19</option>
-                    <option value="235/40 R18">235/40 R18</option>
-                    <option value="235/40 R19">235/40 R19</option>
-                    <option value="235/45 R17">235/45 R17</option>
-                    <option value="235/45 R18">235/45 R18</option>
-                    <option value="235/50 R18">235/50 R18</option>
-                    <option value="235/50 R19">235/50 R19</option>
-                    <option value="235/55 R17">235/55 R17</option>
-                    <option value="235/55 R18">235/55 R18</option>
-                    <option value="235/55 R19">235/55 R19</option>
-                    <option value="235/60 R18">235/60 R18</option>
-                    <option value="235/65 R17">235/65 R17</option>
-                  </optgroup>
-                  <optgroup label="Breedte 245 mm">
-                    <option value="245/35 R20">245/35 R20</option>
-                    <option value="245/40 R18">245/40 R18</option>
-                    <option value="245/40 R19">245/40 R19</option>
-                    <option value="245/45 R17">245/45 R17</option>
-                    <option value="245/45 R18">245/45 R18</option>
-                    <option value="245/45 R19">245/45 R19</option>
-                    <option value="245/50 R18">245/50 R18</option>
-                    <option value="245/50 R19">245/50 R19</option>
-                  </optgroup>
-                  <optgroup label="Breedte 255 mm">
-                    <option value="255/35 R19">255/35 R19</option>
-                    <option value="255/35 R20">255/35 R20</option>
-                    <option value="255/40 R19">255/40 R19</option>
-                    <option value="255/45 R19">255/45 R19</option>
-                    <option value="255/45 R20">255/45 R20</option>
-                    <option value="255/50 R19">255/50 R19</option>
-                    <option value="255/55 R18">255/55 R18</option>
-                  </optgroup>
-                  <optgroup label="Breedte 265 mm">
-                    <option value="265/35 R20">265/35 R20</option>
-                    <option value="265/40 R20">265/40 R20</option>
-                    <option value="265/45 R20">265/45 R20</option>
-                    <option value="265/50 R19">265/50 R19</option>
-                    <option value="265/50 R20">265/50 R20</option>
-                  </optgroup>
-                </select>
-                <p class="field__help" id="pick-size-help">Zoals op de flank van uw band, zonder de code voor draagvermogen en snelheid. Gesorteerd op breedte, hoogte en inch.</p>
+              <div class="tyre-finder">
+                <div class="field tyre-finder__search">
+                  <label for="pick-size-search">Zoek uw bandenmaat</label>
+                  <div class="tyre-finder__input">
+                    <input id="pick-size-search" type="search" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" placeholder="Bv. 205/55 R16" aria-describedby="pick-size-help" aria-controls="pick-size-list" data-tyre-search>
+                    <button class="tyre-finder__clear" type="button" hidden data-tyre-search-clear>
+                      <span class="visually-hidden">Wis zoekopdracht</span>
+                    </button>
+                  </div>
+                  <p class="field__help" id="pick-size-help">Een deel volstaat ook: 205, 205 55 16 of R16.</p>
+                </div>
+
+                <div class="tyre-finder__results">
+                  <p class="tyre-finder__count" role="status" aria-live="polite" data-tyre-count>99 maten</p>
+
+                  <div class="tyre-finder__viewport">
+                    <div class="tyre-finder__list" id="pick-size-list" role="group" aria-label="Bandenmaat" data-tyre-sizes>
+                  <fieldset class="tyre-group" data-tyre-group="145">
+                    <legend>Breedte <span class="tyre-group__width">145</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="145/70 R13" data-tyre-size>
+                        <span>145/70 R13</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="155">
+                    <legend>Breedte <span class="tyre-group__width">155</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="155/65 R13" data-tyre-size>
+                        <span>155/65 R13</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="155/65 R14" data-tyre-size>
+                        <span>155/65 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="155/70 R13" data-tyre-size>
+                        <span>155/70 R13</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="165">
+                    <legend>Breedte <span class="tyre-group__width">165</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="165/60 R14" data-tyre-size>
+                        <span>165/60 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="165/65 R14" data-tyre-size>
+                        <span>165/65 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="165/65 R15" data-tyre-size>
+                        <span>165/65 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="165/70 R14" data-tyre-size>
+                        <span>165/70 R14</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="175">
+                    <legend>Breedte <span class="tyre-group__width">175</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/55 R15" data-tyre-size>
+                        <span>175/55 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/60 R14" data-tyre-size>
+                        <span>175/60 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/60 R15" data-tyre-size>
+                        <span>175/60 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/65 R14" data-tyre-size>
+                        <span>175/65 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/65 R15" data-tyre-size>
+                        <span>175/65 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/70 R13" data-tyre-size>
+                        <span>175/70 R13</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="175/70 R14" data-tyre-size>
+                        <span>175/70 R14</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="185">
+                    <legend>Breedte <span class="tyre-group__width">185</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/50 R16" data-tyre-size>
+                        <span>185/50 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/55 R15" data-tyre-size>
+                        <span>185/55 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/55 R16" data-tyre-size>
+                        <span>185/55 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/60 R14" data-tyre-size>
+                        <span>185/60 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/60 R15" data-tyre-size>
+                        <span>185/60 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/65 R14" data-tyre-size>
+                        <span>185/65 R14</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/65 R15" data-tyre-size>
+                        <span>185/65 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="185/70 R14" data-tyre-size>
+                        <span>185/70 R14</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="195">
+                    <legend>Breedte <span class="tyre-group__width">195</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/45 R16" data-tyre-size>
+                        <span>195/45 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/50 R15" data-tyre-size>
+                        <span>195/50 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/50 R16" data-tyre-size>
+                        <span>195/50 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/55 R15" data-tyre-size>
+                        <span>195/55 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/55 R16" data-tyre-size>
+                        <span>195/55 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/60 R15" data-tyre-size>
+                        <span>195/60 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/60 R16" data-tyre-size>
+                        <span>195/60 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="195/65 R15" data-tyre-size>
+                        <span>195/65 R15</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="205">
+                    <legend>Breedte <span class="tyre-group__width">205</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/45 R16" data-tyre-size>
+                        <span>205/45 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/45 R17" data-tyre-size>
+                        <span>205/45 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/50 R16" data-tyre-size>
+                        <span>205/50 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/50 R17" data-tyre-size>
+                        <span>205/50 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/55 R16" data-tyre-size>
+                        <span>205/55 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/55 R17" data-tyre-size>
+                        <span>205/55 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/60 R16" data-tyre-size>
+                        <span>205/60 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/65 R15" data-tyre-size>
+                        <span>205/65 R15</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="205/65 R16" data-tyre-size>
+                        <span>205/65 R16</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="215">
+                    <legend>Breedte <span class="tyre-group__width">215</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/40 R17" data-tyre-size>
+                        <span>215/40 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/40 R18" data-tyre-size>
+                        <span>215/40 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/45 R17" data-tyre-size>
+                        <span>215/45 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/45 R18" data-tyre-size>
+                        <span>215/45 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/50 R17" data-tyre-size>
+                        <span>215/50 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/55 R16" data-tyre-size>
+                        <span>215/55 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/55 R17" data-tyre-size>
+                        <span>215/55 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/55 R18" data-tyre-size>
+                        <span>215/55 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/60 R16" data-tyre-size>
+                        <span>215/60 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/60 R17" data-tyre-size>
+                        <span>215/60 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/65 R16" data-tyre-size>
+                        <span>215/65 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/65 R17" data-tyre-size>
+                        <span>215/65 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="215/70 R16" data-tyre-size>
+                        <span>215/70 R16</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="225">
+                    <legend>Breedte <span class="tyre-group__width">225</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/35 R19" data-tyre-size>
+                        <span>225/35 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/40 R18" data-tyre-size>
+                        <span>225/40 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/45 R17" data-tyre-size>
+                        <span>225/45 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/45 R18" data-tyre-size>
+                        <span>225/45 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/50 R17" data-tyre-size>
+                        <span>225/50 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/50 R18" data-tyre-size>
+                        <span>225/50 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/55 R16" data-tyre-size>
+                        <span>225/55 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/55 R17" data-tyre-size>
+                        <span>225/55 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/55 R18" data-tyre-size>
+                        <span>225/55 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/55 R19" data-tyre-size>
+                        <span>225/55 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/60 R16" data-tyre-size>
+                        <span>225/60 R16</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/60 R17" data-tyre-size>
+                        <span>225/60 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/60 R18" data-tyre-size>
+                        <span>225/60 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="225/65 R17" data-tyre-size>
+                        <span>225/65 R17</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="235">
+                    <legend>Breedte <span class="tyre-group__width">235</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/35 R19" data-tyre-size>
+                        <span>235/35 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/40 R18" data-tyre-size>
+                        <span>235/40 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/40 R19" data-tyre-size>
+                        <span>235/40 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/45 R17" data-tyre-size>
+                        <span>235/45 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/45 R18" data-tyre-size>
+                        <span>235/45 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/50 R18" data-tyre-size>
+                        <span>235/50 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/50 R19" data-tyre-size>
+                        <span>235/50 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/55 R17" data-tyre-size>
+                        <span>235/55 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/55 R18" data-tyre-size>
+                        <span>235/55 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/55 R19" data-tyre-size>
+                        <span>235/55 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/60 R18" data-tyre-size>
+                        <span>235/60 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="235/65 R17" data-tyre-size>
+                        <span>235/65 R17</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="245">
+                    <legend>Breedte <span class="tyre-group__width">245</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/35 R20" data-tyre-size>
+                        <span>245/35 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/40 R18" data-tyre-size>
+                        <span>245/40 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/40 R19" data-tyre-size>
+                        <span>245/40 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/45 R17" data-tyre-size>
+                        <span>245/45 R17</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/45 R18" data-tyre-size>
+                        <span>245/45 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/45 R19" data-tyre-size>
+                        <span>245/45 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/50 R18" data-tyre-size>
+                        <span>245/50 R18</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="245/50 R19" data-tyre-size>
+                        <span>245/50 R19</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="255">
+                    <legend>Breedte <span class="tyre-group__width">255</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/35 R19" data-tyre-size>
+                        <span>255/35 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/35 R20" data-tyre-size>
+                        <span>255/35 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/40 R19" data-tyre-size>
+                        <span>255/40 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/45 R19" data-tyre-size>
+                        <span>255/45 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/45 R20" data-tyre-size>
+                        <span>255/45 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/50 R19" data-tyre-size>
+                        <span>255/50 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="255/55 R18" data-tyre-size>
+                        <span>255/55 R18</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="tyre-group" data-tyre-group="265">
+                    <legend>Breedte <span class="tyre-group__width">265</span> mm</legend>
+                    <div class="tyre-group__sizes">
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="265/35 R20" data-tyre-size>
+                        <span>265/35 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="265/40 R20" data-tyre-size>
+                        <span>265/40 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="265/45 R20" data-tyre-size>
+                        <span>265/45 R20</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="265/50 R19" data-tyre-size>
+                        <span>265/50 R19</span>
+                      </label>
+                      <label class="tyre-size">
+                        <input type="radio" name="maat" value="265/50 R20" data-tyre-size>
+                        <span>265/50 R20</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                    </div>
+                  </div>
+
+                  <div class="tyre-finder__empty" hidden data-tyre-empty>
+                    <p class="tyre-finder__empty-title" data-tyre-empty-text></p>
+                    <p>Controleer de cijfers, of vul uw maat hieronder handmatig in bij ‘Mijn maat staat er niet tussen’.</p>
+                    <button class="btn btn--ghost btn--sm" type="button" data-tyre-show-all>Toon alle maten</button>
+                  </div>
+                </div>
+
+                <p class="tyre-finder__note">Gangbare maten voor personenwagens en SUV's, geen voorraad: wat beschikbaar is, bevestigt de vestiging.</p>
               </div>
 
               <fieldset class="field field--choice" disabled data-tyre-season>
@@ -342,6 +700,7 @@
             <div class="tyre-picker__selection">
               <p class="tyre-picker__selection-label">Gekozen maat</p>
               <p class="tyre-picker__selection-value" data-tyre-selection>Nog niet gekozen</p>
+              <button class="link-button tyre-picker__clear" type="button" hidden data-tyre-clear>Wis keuze</button>
               <p class="tyre-picker__status" role="status" aria-live="polite" data-tyre-picker-status>Kies eerst uw bandenmaat in de lijst.</p>
             </div>
           </div>
@@ -881,6 +1240,6 @@
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Vraag via de website","tyres":{"subject":"Aanvraag occasiebanden","intro":"Graag een voorstel voor occasiebanden.","labels":{"name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","year":"Bouwjaar","size":"Bandenmaat","quantity":"Aantal banden","season":"Type band","branch":"Vestiging","timing":"Wanneer","note":"Opmerking"},"season":{"zomer":"Zomerbanden","winter":"Winterbanden","vierseizoenen":"Vierseizoenenbanden","onbekend":"Weet ik nog niet"},"timing":{"snel":"Zo snel mogelijk","week":"Deze week","flexibel":"Geen haast"},"noBranch":"Geen voorkeur","sizeUnknown":"Nog niet gekend","empty":"Nog niet ingevuld","recipient":"Uw e-mail gaat naar {email}.","errors":{"nameRequired":"Vul uw naam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","yearInvalid":"Vul het bouwjaar in als vier cijfers, of laat dit veld leeg.","sizeInvalid":"Deze bandenmaat lijkt niet te kloppen. Voorbeeld: {example}","sizeOrCarRequired":"Vul uw bandenmaat in, of anders merk en model van uw wagen."},"picker":{"eyebrow":"Begeleide keuze","title":"Kies uw bandenmaat uit de lijst.","intro":"Kies de maat van uw huidige band uit de lijst en duid daarna het type band aan. De lijst toont gangbare maten voor personenwagens en SUV's, geen voorraad: wat beschikbaar is, bevestigt de vestiging. Staat uw maat er niet tussen? Vul ze dan hieronder handmatig in.","labels":{"size":"Bandenmaat","season":"Type band","selectedSize":"Gekozen maat"},"placeholder":"Kies uw bandenmaat","sizeGroup":"Breedte {width} mm","sizeHelp":"Zoals op de flank van uw band, zonder de code voor draagvermogen en snelheid. Gesorteerd op breedte, hoogte en inch.","sizeEmpty":"Nog niet gekozen","cta":"Zet deze maat in mijn aanvraag","helpToggle":"Waar vind ik mijn bandenmaat?","helpTitle":"Uw bandenmaat leest u af op de flank van de band.","helpIntro":"U vindt de code op de zijkant van uw huidige band. In het instructieboekje of op de deurstijl staat vaak hetzelfde formaat.","alternativeTitle":"Liever een andere route?","unknownTitle":"Ik weet mijn bandenmaat niet","unknownText":"Geen probleem. Geef straks merk, model en bouwjaar door; dan kijken we mee.","unknownCta":"Ga naar wagengegevens","manualTitle":"Mijn maat staat er niet tussen","manualText":"Voor een afwijkende of minder courante maat gebruikt u de bestaande vrije invoer in de aanvraag hieronder.","manualCta":"Vul mijn maat handmatig in","status":{"size":"Kies eerst uw bandenmaat in de lijst.","season":"Maat {size} gekozen. Kies nu het type band.","ready":"Gekozen maat: {size} · {season}."},"messages":{"prefilled":"We vulden {size} en {season} al in bij uw aanvraag hieronder.","needCar":"Kent u de maat niet? Geef hieronder merk, model en bouwjaar door.","manualEntry":"Staat uw maat er niet tussen? Vul ze hieronder handmatig in."}}},"services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Menu openen","menuClose":"Menu sluiten","errors":{"nameRequired":"Vul uw voor- en achternaam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","branchRequired":"Kies een vestiging.","messageTooShort":"Beschrijf kort uw vraag (minstens 10 tekens)."},"errorSummaryOne":"Er is nog 1 veld dat aandacht nodig heeft.","errorSummaryMany":"Er zijn nog {count} velden die aandacht nodig hebben.","callNumber":"Bel {phone}","labels":{"branch":"Vestiging","name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","service":"Dienst","message":"Uw vraag"},"mailSubject":"Vraag via de website","tyres":{"subject":"Aanvraag occasiebanden","intro":"Graag een voorstel voor occasiebanden.","labels":{"name":"Naam","email":"E-mail","phone":"Telefoon","car":"Wagen","year":"Bouwjaar","size":"Bandenmaat","quantity":"Aantal banden","season":"Type band","branch":"Vestiging","timing":"Wanneer","note":"Opmerking"},"season":{"zomer":"Zomerbanden","winter":"Winterbanden","vierseizoenen":"Vierseizoenenbanden","onbekend":"Weet ik nog niet"},"timing":{"snel":"Zo snel mogelijk","week":"Deze week","flexibel":"Geen haast"},"noBranch":"Geen voorkeur","sizeUnknown":"Nog niet gekend","empty":"Nog niet ingevuld","recipient":"Uw e-mail gaat naar {email}.","errors":{"nameRequired":"Vul uw naam in.","emailRequired":"Vul uw e-mailadres in.","emailInvalid":"Dit e-mailadres lijkt niet te kloppen. Voorbeeld: naam@voorbeeld.be","phoneInvalid":"Controleer het telefoonnummer, of laat dit veld leeg.","yearInvalid":"Vul het bouwjaar in als vier cijfers, of laat dit veld leeg.","sizeInvalid":"Deze bandenmaat lijkt niet te kloppen. Voorbeeld: {example}","sizeOrCarRequired":"Vul uw bandenmaat in, of anders merk en model van uw wagen."},"picker":{"eyebrow":"Begeleide keuze","title":"Zoek en kies uw bandenmaat.","intro":"Zoek uw maat of blader per breedte, en kies daarna het type band.","labels":{"size":"Bandenmaat","search":"Zoek uw bandenmaat","season":"Type band","selectedSize":"Gekozen maat"},"searchPlaceholder":"Bv. 205/55 R16","searchClear":"Wis zoekopdracht","sizeGroup":"Breedte {width} mm","sizeHelp":"Een deel volstaat ook: 205, 205 55 16 of R16.","listNote":"Gangbare maten voor personenwagens en SUV's, geen voorraad: wat beschikbaar is, bevestigt de vestiging.","count":{"all":"{total} maten","filtered":"{count} van {total} maten"},"empty":"Geen maat in de lijst voor ‘{query}’.","emptyHelp":"Controleer de cijfers, of vul uw maat hieronder handmatig in bij ‘Mijn maat staat er niet tussen’.","showAll":"Toon alle maten","clear":"Wis keuze","sizeEmpty":"Nog niet gekozen","cta":"Zet deze maat in mijn aanvraag","helpToggle":"Waar vind ik mijn bandenmaat?","helpTitle":"Uw bandenmaat leest u af op de flank van de band.","helpIntro":"U vindt de code op de zijkant van uw huidige band. In het instructieboekje of op de deurstijl staat vaak hetzelfde formaat.","alternativeTitle":"Liever een andere route?","unknownTitle":"Ik weet mijn bandenmaat niet","unknownText":"Geen probleem. Geef straks merk, model en bouwjaar door; dan kijken we mee.","unknownCta":"Ga naar wagengegevens","manualTitle":"Mijn maat staat er niet tussen","manualText":"Voor een afwijkende of minder courante maat gebruikt u de bestaande vrije invoer in de aanvraag hieronder.","manualCta":"Vul mijn maat handmatig in","status":{"size":"Kies eerst uw bandenmaat in de lijst.","season":"Maat {size} gekozen. Kies nu het type band.","ready":"Gekozen maat: {size} · {season}."},"messages":{"prefilled":"We vulden {size} en {season} al in bij uw aanvraag hieronder.","needCar":"Kent u de maat niet? Geef hieronder merk, model en bouwjaar door.","manualEntry":"Staat uw maat er niet tussen? Vul ze hieronder handmatig in."}}},"services":{"onderhoud":"Onderhoud","banden":"Banden","remmen":"Remmen","airco":"Airco","herstellingen":"Herstellingen","autokeuring":"Autokeuring (nazicht)","batterij":"Batterij","distributie":"Distributieriem of -ketting","occasiebanden":"Occasiebanden","anders":"Iets anders"}}</script>
   </body>
 </html>
