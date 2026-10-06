@@ -30,8 +30,8 @@
     <link rel="alternate" hreflang="x-default" href="../../occasiebanden/" >
 
     <link rel="icon" type="image/png" href="../../favicon.png">
-    <script type="module" crossorigin src="../../assets/main-Y1Pq8arj.js"></script>
-    <link rel="stylesheet" crossorigin href="../../assets/main-D9goMVxE.css">
+    <script type="module" crossorigin src="../../assets/main-D6KC5mRi.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-CuVaoP8R.css">
   </head>
 
   <body>
@@ -162,14 +162,14 @@
         </div>
       </section>
 
-      <!-- ============ GUIDED SIZE PICKER ============ -->
+      <!-- ============ SIZE PICKER ============ -->
       <section class="section section--raised tyre-picker enhance-only" id="maatkiezer" aria-labelledby="maatkiezer-title" data-tyre-picker>
         <div class="container">
           <div class="tyre-picker__header">
             <header class="section__head reveal">
               <p class="eyebrow">Guided choice</p>
-              <h2 id="maatkiezer-title">Choose your tyre size step by step.</h2>
-              <p class="section__intro">Start with the size on your current tyre. We only show common passenger-car combinations here; if your size is missing, you can still enter it manually below.</p>
+              <h2 id="maatkiezer-title">Choose your tyre size from the list.</h2>
+              <p class="section__intro">Choose the size of your current tyre from the list, then select the type of tyre. The list shows common sizes for passenger cars and SUVs, not stock: the branch confirms what is available. Is your size missing? Then enter it manually below.</p>
             </header>
             <p class="tyre-picker__help-action reveal">
               <button class="link-button" type="button" aria-expanded="false" aria-controls="tyre-help-panel" data-tyre-help-toggle>Where can I find my tyre size?</button>
@@ -179,49 +179,159 @@
           <div class="tyre-picker__panel reveal">
             <div class="tyre-picker__flow">
               <div class="field">
-                <label for="pick-width">Width</label>
-                <select id="pick-width" name="breedte" data-tyre-width>
-                  <option value="">Choose width</option>
-                  <option value="145">145</option>
-                  <option value="155">155</option>
-                  <option value="165">165</option>
-                  <option value="175">175</option>
-                  <option value="185">185</option>
-                  <option value="195">195</option>
-                  <option value="205">205</option>
-                  <option value="215">215</option>
-                  <option value="225">225</option>
-                  <option value="235">235</option>
-                  <option value="245">245</option>
-                  <option value="255">255</option>
-                  <option value="265">265</option>
+                <label for="pick-size">Tyre size</label>
+                <select id="pick-size" name="maat" aria-describedby="pick-size-help" data-tyre-size>
+                  <option value="">Choose your tyre size</option>
+                  <optgroup label="Width 145 mm">
+                    <option value="145/70 R13">145/70 R13</option>
+                  </optgroup>
+                  <optgroup label="Width 155 mm">
+                    <option value="155/65 R13">155/65 R13</option>
+                    <option value="155/65 R14">155/65 R14</option>
+                    <option value="155/70 R13">155/70 R13</option>
+                  </optgroup>
+                  <optgroup label="Width 165 mm">
+                    <option value="165/60 R14">165/60 R14</option>
+                    <option value="165/65 R14">165/65 R14</option>
+                    <option value="165/65 R15">165/65 R15</option>
+                    <option value="165/70 R14">165/70 R14</option>
+                  </optgroup>
+                  <optgroup label="Width 175 mm">
+                    <option value="175/55 R15">175/55 R15</option>
+                    <option value="175/60 R14">175/60 R14</option>
+                    <option value="175/60 R15">175/60 R15</option>
+                    <option value="175/65 R14">175/65 R14</option>
+                    <option value="175/65 R15">175/65 R15</option>
+                    <option value="175/70 R13">175/70 R13</option>
+                    <option value="175/70 R14">175/70 R14</option>
+                  </optgroup>
+                  <optgroup label="Width 185 mm">
+                    <option value="185/50 R16">185/50 R16</option>
+                    <option value="185/55 R15">185/55 R15</option>
+                    <option value="185/55 R16">185/55 R16</option>
+                    <option value="185/60 R14">185/60 R14</option>
+                    <option value="185/60 R15">185/60 R15</option>
+                    <option value="185/65 R14">185/65 R14</option>
+                    <option value="185/65 R15">185/65 R15</option>
+                    <option value="185/70 R14">185/70 R14</option>
+                  </optgroup>
+                  <optgroup label="Width 195 mm">
+                    <option value="195/45 R16">195/45 R16</option>
+                    <option value="195/50 R15">195/50 R15</option>
+                    <option value="195/50 R16">195/50 R16</option>
+                    <option value="195/55 R15">195/55 R15</option>
+                    <option value="195/55 R16">195/55 R16</option>
+                    <option value="195/60 R15">195/60 R15</option>
+                    <option value="195/60 R16">195/60 R16</option>
+                    <option value="195/65 R15">195/65 R15</option>
+                  </optgroup>
+                  <optgroup label="Width 205 mm">
+                    <option value="205/45 R16">205/45 R16</option>
+                    <option value="205/45 R17">205/45 R17</option>
+                    <option value="205/50 R16">205/50 R16</option>
+                    <option value="205/50 R17">205/50 R17</option>
+                    <option value="205/55 R16">205/55 R16</option>
+                    <option value="205/55 R17">205/55 R17</option>
+                    <option value="205/60 R16">205/60 R16</option>
+                    <option value="205/65 R15">205/65 R15</option>
+                    <option value="205/65 R16">205/65 R16</option>
+                  </optgroup>
+                  <optgroup label="Width 215 mm">
+                    <option value="215/40 R17">215/40 R17</option>
+                    <option value="215/40 R18">215/40 R18</option>
+                    <option value="215/45 R17">215/45 R17</option>
+                    <option value="215/45 R18">215/45 R18</option>
+                    <option value="215/50 R17">215/50 R17</option>
+                    <option value="215/55 R16">215/55 R16</option>
+                    <option value="215/55 R17">215/55 R17</option>
+                    <option value="215/55 R18">215/55 R18</option>
+                    <option value="215/60 R16">215/60 R16</option>
+                    <option value="215/60 R17">215/60 R17</option>
+                    <option value="215/65 R16">215/65 R16</option>
+                    <option value="215/65 R17">215/65 R17</option>
+                    <option value="215/70 R16">215/70 R16</option>
+                  </optgroup>
+                  <optgroup label="Width 225 mm">
+                    <option value="225/35 R19">225/35 R19</option>
+                    <option value="225/40 R18">225/40 R18</option>
+                    <option value="225/45 R17">225/45 R17</option>
+                    <option value="225/45 R18">225/45 R18</option>
+                    <option value="225/50 R17">225/50 R17</option>
+                    <option value="225/50 R18">225/50 R18</option>
+                    <option value="225/55 R16">225/55 R16</option>
+                    <option value="225/55 R17">225/55 R17</option>
+                    <option value="225/55 R18">225/55 R18</option>
+                    <option value="225/55 R19">225/55 R19</option>
+                    <option value="225/60 R16">225/60 R16</option>
+                    <option value="225/60 R17">225/60 R17</option>
+                    <option value="225/60 R18">225/60 R18</option>
+                    <option value="225/65 R17">225/65 R17</option>
+                  </optgroup>
+                  <optgroup label="Width 235 mm">
+                    <option value="235/35 R19">235/35 R19</option>
+                    <option value="235/40 R18">235/40 R18</option>
+                    <option value="235/40 R19">235/40 R19</option>
+                    <option value="235/45 R17">235/45 R17</option>
+                    <option value="235/45 R18">235/45 R18</option>
+                    <option value="235/50 R18">235/50 R18</option>
+                    <option value="235/50 R19">235/50 R19</option>
+                    <option value="235/55 R17">235/55 R17</option>
+                    <option value="235/55 R18">235/55 R18</option>
+                    <option value="235/55 R19">235/55 R19</option>
+                    <option value="235/60 R18">235/60 R18</option>
+                    <option value="235/65 R17">235/65 R17</option>
+                  </optgroup>
+                  <optgroup label="Width 245 mm">
+                    <option value="245/35 R20">245/35 R20</option>
+                    <option value="245/40 R18">245/40 R18</option>
+                    <option value="245/40 R19">245/40 R19</option>
+                    <option value="245/45 R17">245/45 R17</option>
+                    <option value="245/45 R18">245/45 R18</option>
+                    <option value="245/45 R19">245/45 R19</option>
+                    <option value="245/50 R18">245/50 R18</option>
+                    <option value="245/50 R19">245/50 R19</option>
+                  </optgroup>
+                  <optgroup label="Width 255 mm">
+                    <option value="255/35 R19">255/35 R19</option>
+                    <option value="255/35 R20">255/35 R20</option>
+                    <option value="255/40 R19">255/40 R19</option>
+                    <option value="255/45 R19">255/45 R19</option>
+                    <option value="255/45 R20">255/45 R20</option>
+                    <option value="255/50 R19">255/50 R19</option>
+                    <option value="255/55 R18">255/55 R18</option>
+                  </optgroup>
+                  <optgroup label="Width 265 mm">
+                    <option value="265/35 R20">265/35 R20</option>
+                    <option value="265/40 R20">265/40 R20</option>
+                    <option value="265/45 R20">265/45 R20</option>
+                    <option value="265/50 R19">265/50 R19</option>
+                    <option value="265/50 R20">265/50 R20</option>
+                  </optgroup>
                 </select>
+                <p class="field__help" id="pick-size-help">As on the sidewall of your tyre, without the load and speed code. Sorted by width, height and rim size.</p>
               </div>
 
-              <div class="field">
-                <label for="pick-profile">Height / profile</label>
-                <select id="pick-profile" name="profiel" disabled data-tyre-profile>
-                  <option value="">Choose height</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label for="pick-rim">Rim diameter / inch</label>
-                <select id="pick-rim" name="inch" disabled data-tyre-rim>
-                  <option value="">Choose inch size</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label for="pick-season">Type of tyre</label>
-                <select id="pick-season" name="type" disabled data-tyre-season>
-                  <option value="">Choose tyre type</option>
-                  <option value="zomer">Summer tyres</option>
-                  <option value="winter">Winter tyres</option>
-                  <option value="vierseizoenen">All-season tyres</option>
-                  <option value="onbekend">I do not know yet</option>
-                </select>
-              </div>
+              <fieldset class="field field--choice" disabled data-tyre-season>
+                <legend>Type of tyre</legend>
+                <div class="segmented">
+                    <label class="segment">
+                      <input type="radio" name="type" value="zomer">
+                      <span>Summer tyres</span>
+                    </label>
+                    <label class="segment">
+                      <input type="radio" name="type" value="winter">
+                      <span>Winter tyres</span>
+                    </label>
+                    <label class="segment">
+                      <input type="radio" name="type" value="vierseizoenen">
+                      <span>All-season tyres</span>
+                    </label>
+                    <label class="segment">
+                      <input type="radio" name="type" value="onbekend">
+                      <span>I do not know yet</span>
+                    </label>
+                  </div>
+              </fieldset>
 
               <button class="btn btn--primary tyre-picker__submit" type="button" disabled data-tyre-picker-submit>
                 <span>Add this size to my request</span>
@@ -229,10 +339,10 @@
               </button>
             </div>
 
-            <div class="tyre-picker__selection" aria-live="polite">
+            <div class="tyre-picker__selection">
               <p class="tyre-picker__selection-label">Selected size</p>
-              <output class="tyre-picker__selection-value" data-tyre-selection>Not selected yet</output>
-              <p class="tyre-picker__status" data-tyre-picker-status>Choose the width first.</p>
+              <p class="tyre-picker__selection-value" data-tyre-selection>Not selected yet</p>
+              <p class="tyre-picker__status" role="status" aria-live="polite" data-tyre-picker-status>First choose your tyre size from the list.</p>
             </div>
           </div>
 
@@ -771,6 +881,6 @@
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Question via the website","tyres":{"subject":"Used tyres request","intro":"I would like a proposal for used tyres.","labels":{"name":"Name","email":"E-mail address","phone":"Phone","car":"Car","year":"Year of manufacture","size":"Tyre size","quantity":"Number of tyres","season":"Type of tyre","branch":"Branch","timing":"When","note":"Comment"},"season":{"zomer":"Summer tyres","winter":"Winter tyres","vierseizoenen":"All-season tyres","onbekend":"I do not know yet"},"timing":{"snel":"As soon as possible","week":"This week","flexibel":"No rush"},"noBranch":"No preference","sizeUnknown":"Not known yet","empty":"Not filled in yet","recipient":"Your e-mail goes to {email}.","errors":{"nameRequired":"Fill in your name.","emailRequired":"Fill in your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","yearInvalid":"Enter the year of manufacture as four digits, or leave this field empty.","sizeInvalid":"This tyre size does not look right. Example: {example}","sizeOrCarRequired":"Fill in your tyre size, or otherwise the make and model of your car."},"picker":{"eyebrow":"Guided choice","title":"Choose your tyre size step by step.","intro":"Start with the size on your current tyre. We only show common passenger-car combinations here; if your size is missing, you can still enter it manually below.","labels":{"width":"Width","profile":"Height / profile","rim":"Rim diameter / inch","season":"Type of tyre","selectedSize":"Selected size"},"placeholders":{"width":"Choose width","profile":"Choose height","rim":"Choose inch size","season":"Choose tyre type"},"sizeEmpty":"Not selected yet","cta":"Add this size to my request","helpToggle":"Where can I find my tyre size?","helpTitle":"You can read the size on the tyre sidewall.","helpIntro":"You will find the code on the side of your current tyre. The handbook or door frame often shows the same format too.","alternativeTitle":"Prefer a different route?","unknownTitle":"I do not know my tyre size","unknownText":"No problem. Tell us the make, model and year next, and we will help you from there.","unknownCta":"Go to vehicle details","manualTitle":"My size is not listed here","manualText":"For an uncommon size, use the existing free-text field in the request form below.","manualCta":"Enter my size manually","status":{"width":"Choose the width first.","profile":"Then choose the profile.","rim":"Then choose the rim diameter.","season":"Choose the tyre type last.","ready":"Selected size: {size} · {season}."},"messages":{"prefilled":"We already filled in {size} and {season} in your request below.","needCar":"Do not know the size? Enter your make, model and year below.","manualEntry":"Is your size missing? Enter it manually below."}}},"services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Open menu","menuClose":"Close menu","errors":{"nameRequired":"Enter your first and last name.","emailRequired":"Enter your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","branchRequired":"Choose a branch.","messageTooShort":"Briefly describe your question (at least 10 characters)."},"errorSummaryOne":"1 field still needs your attention.","errorSummaryMany":"{count} fields still need your attention.","callNumber":"Call {phone}","labels":{"branch":"Branch","name":"Name","email":"E-mail","phone":"Phone","car":"Car","service":"Service","message":"Your question"},"mailSubject":"Question via the website","tyres":{"subject":"Used tyres request","intro":"I would like a proposal for used tyres.","labels":{"name":"Name","email":"E-mail address","phone":"Phone","car":"Car","year":"Year of manufacture","size":"Tyre size","quantity":"Number of tyres","season":"Type of tyre","branch":"Branch","timing":"When","note":"Comment"},"season":{"zomer":"Summer tyres","winter":"Winter tyres","vierseizoenen":"All-season tyres","onbekend":"I do not know yet"},"timing":{"snel":"As soon as possible","week":"This week","flexibel":"No rush"},"noBranch":"No preference","sizeUnknown":"Not known yet","empty":"Not filled in yet","recipient":"Your e-mail goes to {email}.","errors":{"nameRequired":"Fill in your name.","emailRequired":"Fill in your e-mail address.","emailInvalid":"This e-mail address does not look right. Example: name@example.be","phoneInvalid":"Check the phone number, or leave this field empty.","yearInvalid":"Enter the year of manufacture as four digits, or leave this field empty.","sizeInvalid":"This tyre size does not look right. Example: {example}","sizeOrCarRequired":"Fill in your tyre size, or otherwise the make and model of your car."},"picker":{"eyebrow":"Guided choice","title":"Choose your tyre size from the list.","intro":"Choose the size of your current tyre from the list, then select the type of tyre. The list shows common sizes for passenger cars and SUVs, not stock: the branch confirms what is available. Is your size missing? Then enter it manually below.","labels":{"size":"Tyre size","season":"Type of tyre","selectedSize":"Selected size"},"placeholder":"Choose your tyre size","sizeGroup":"Width {width} mm","sizeHelp":"As on the sidewall of your tyre, without the load and speed code. Sorted by width, height and rim size.","sizeEmpty":"Not selected yet","cta":"Add this size to my request","helpToggle":"Where can I find my tyre size?","helpTitle":"You can read the size on the tyre sidewall.","helpIntro":"You will find the code on the side of your current tyre. The handbook or door frame often shows the same format too.","alternativeTitle":"Prefer a different route?","unknownTitle":"I do not know my tyre size","unknownText":"No problem. Tell us the make, model and year next, and we will help you from there.","unknownCta":"Go to vehicle details","manualTitle":"My size is not listed here","manualText":"For an uncommon size, use the existing free-text field in the request form below.","manualCta":"Enter my size manually","status":{"size":"First choose your tyre size from the list.","season":"Size {size} selected. Now choose the type of tyre.","ready":"Selected size: {size} · {season}."},"messages":{"prefilled":"We already filled in {size} and {season} in your request below.","needCar":"Do not know the size? Enter your make, model and year below.","manualEntry":"Is your size missing? Enter it manually below."}}},"services":{"onderhoud":"Servicing","banden":"Tyres","remmen":"Brakes","airco":"Air conditioning","herstellingen":"Repairs","autokeuring":"Roadworthiness test (pre-check)","batterij":"Battery","distributie":"Timing belt or chain","occasiebanden":"Used tyres","anders":"Something else"}}</script>
   </body>
 </html>
