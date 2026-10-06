@@ -30,7 +30,7 @@
     <link rel="alternate" hreflang="x-default" href="../../offerte/" >
 
     <link rel="icon" type="image/png" href="../../favicon.png">
-    <script type="module" crossorigin src="../../assets/main-BTpbo0wl.js"></script>
+    <script type="module" crossorigin src="../../assets/main-DkYYR0Ik.js"></script>
     <link rel="stylesheet" crossorigin href="../../assets/main-BBs-ZkFZ.css">
   </head>
 
@@ -333,6 +333,180 @@
                   <h3 class="wizard__title" id="step-2-title" tabindex="-1" data-step-title><span class="wizard__count">Étape 2 sur 3</span> Quelle voiture, et dans quel établissement ?</h3>
                   <p class="wizard__help">Le prix dépend de la marque, du modèle et des travaux nécessaires. C'est pourquoi nous vous demandons quelle voiture vous avez.</p>
                   <p class="wizard__time"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Environ une minute</span></p>
+                </div>
+
+                <div class="wizard__tyres" hidden data-quote-tyres>
+                <h4 class="form__group">Vos pneus</h4>
+
+                <!-- Size picker: step one of the request. Without script the size field below it is the route. -->
+                <div class="tyre-picker enhance-only" data-tyre-picker>
+                  <div class="tyre-picker__header">
+                    <p class="tyre-picker__intro">Choisissez la largeur, la hauteur et le diamètre en pouces, comme indiqué sur le flanc de votre pneu. La dimension s’ajoute directement à votre demande.</p>
+                    <p class="tyre-picker__help-action">
+                      <button class="link-button" type="button" aria-expanded="false" aria-controls="tyre-help-panel" data-tyre-help-toggle>Où trouver ma dimension de pneu ?</button>
+                    </p>
+                  </div>
+
+                  <section class="tyre-picker__help-panel" id="tyre-help-panel" aria-labelledby="tyre-help-title" hidden data-tyre-help-panel>
+                    <div class="tyre-picker__help-copy">
+                      <h4 id="tyre-help-title" tabindex="-1" data-tyre-help-heading>Vous lisez la dimension sur le flanc du pneu.</h4>
+                      <p>Vous trouverez ce code sur le côté de votre pneu actuel. Le manuel du véhicule ou le montant de porte reprend souvent le même format.</p>
+                      <p>La dimension de pneu figure sur le flanc de votre pneu actuel et dans le manuel d'utilisation de votre voiture. Elle se présente comme dans cet exemple.</p>
+                    </div>
+                    <figure class="size" data-size-guide>
+                      <p class="size__code" aria-hidden="true"><span>205</span><span>/55</span><span>R</span><span>16</span><span>91</span><span>V</span></p>
+                      <figcaption>
+                        <p class="size__label">Exemple d'une dimension de pneu: <strong>205/55 R16 91V</strong></p>
+                        <dl class="size__parts">
+                          <div>
+                          <dt>205</dt>
+                          <dd>Largeur du pneu en millimètres</dd>
+                        </div>
+                        <div>
+                          <dt>55</dt>
+                          <dd>Hauteur du flanc, en pour cent de la largeur</dd>
+                        </div>
+                        <div>
+                          <dt>R</dt>
+                          <dd>Pneu radial, le mode de construction courant</dd>
+                        </div>
+                        <div>
+                          <dt>16</dt>
+                          <dd>Diamètre de la jante en pouces</dd>
+                        </div>
+                        <div>
+                          <dt>91</dt>
+                          <dd>Indice de capacité de charge</dd>
+                        </div>
+                        <div>
+                          <dt>V</dt>
+                          <dd>Indice de vitesse maximale</dd>
+                        </div>
+                        </dl>
+                      </figcaption>
+                    </figure>
+                  </section>
+
+                  <div class="tyre-picker__panel">
+                    <div class="tyre-fields" role="group" aria-label="Dimension de pneu">
+                      <div class="tyre-axle tyre-axle--front" data-tyre-axle="front">
+                        <p class="tyre-axle__title" id="tyre-front-title" hidden data-tyre-axle-title>Pneus avant</p>
+                        <div class="tyre-field">
+                  <label id="pick-width-label" for="pick-width">Largeur</label>
+                  <select class="is-empty" id="pick-width" autocomplete="off" data-tyre-width>
+                    <option value="">–</option>
+                    <option value="145">145</option>
+                    <option value="155">155</option>
+                    <option value="165">165</option>
+                    <option value="175">175</option>
+                    <option value="185">185</option>
+                    <option value="195">195</option>
+                    <option value="205">205</option>
+                    <option value="215">215</option>
+                    <option value="225">225</option>
+                    <option value="235">235</option>
+                    <option value="245">245</option>
+                    <option value="255">255</option>
+                    <option value="265">265</option>
+                  </select>
+                </div>
+                <div class="tyre-field">
+                  <label id="pick-profile-label" for="pick-profile">Hauteur</label>
+                  <select class="is-empty" id="pick-profile" autocomplete="off" disabled data-tyre-profile>
+                    <option value="">–</option>
+                  </select>
+                </div>
+                <div class="tyre-field">
+                  <label id="pick-rim-label" for="pick-rim">Pouces</label>
+                  <select class="is-empty" id="pick-rim" autocomplete="off" disabled data-tyre-rim>
+                    <option value="">–</option>
+                  </select>
+                </div>
+                      </div>
+                    </div>
+
+                    <p class="tyre-picker__rear-toggle">
+                      <label class="tyre-check">
+                        <input type="checkbox" aria-controls="tyre-rear" data-tyre-rear-toggle>
+                        <span>Les pneus arrière ont une taille différente</span>
+                      </label>
+                    </p>
+
+                    <div class="tyre-axle tyre-axle--rear" id="tyre-rear" hidden data-tyre-axle="rear">
+                      <p class="tyre-axle__title" id="tyre-rear-title" data-tyre-axle-title>Pneus arrière</p>
+                      <div class="tyre-field">
+                  <label id="pick-rear-width-label" for="pick-rear-width">Largeur</label>
+                  <select class="is-empty" id="pick-rear-width" autocomplete="off" aria-labelledby="tyre-rear-title pick-rear-width-label" data-tyre-width>
+                    <option value="">–</option>
+                    <option value="145">145</option>
+                    <option value="155">155</option>
+                    <option value="165">165</option>
+                    <option value="175">175</option>
+                    <option value="185">185</option>
+                    <option value="195">195</option>
+                    <option value="205">205</option>
+                    <option value="215">215</option>
+                    <option value="225">225</option>
+                    <option value="235">235</option>
+                    <option value="245">245</option>
+                    <option value="255">255</option>
+                    <option value="265">265</option>
+                  </select>
+                </div>
+                <div class="tyre-field">
+                  <label id="pick-rear-profile-label" for="pick-rear-profile">Hauteur</label>
+                  <select class="is-empty" id="pick-rear-profile" autocomplete="off" aria-labelledby="tyre-rear-title pick-rear-profile-label" disabled data-tyre-profile>
+                    <option value="">–</option>
+                  </select>
+                </div>
+                <div class="tyre-field">
+                  <label id="pick-rear-rim-label" for="pick-rear-rim">Pouces</label>
+                  <select class="is-empty" id="pick-rear-rim" autocomplete="off" aria-labelledby="tyre-rear-title pick-rear-rim-label" disabled data-tyre-rim>
+                    <option value="">–</option>
+                  </select>
+                </div>
+                    </div>
+
+                    <div class="tyre-picker__result">
+                      <div class="tyre-picker__selection">
+                        <p class="tyre-picker__selection-label" data-tyre-selection-label>Dimension choisie</p>
+                        <p class="tyre-picker__selection-value">
+                          <span class="tyre-picker__selection-item">
+                            <span class="tyre-picker__selection-axle" hidden data-tyre-selection-axle>Avant</span>
+                            <span class="tyre-picker__selection-size is-empty" data-tyre-selection>Pas encore choisie</span>
+                          </span>
+                          <span class="tyre-picker__selection-item" hidden data-tyre-selection-rear-item>
+                            <span class="tyre-picker__selection-axle">Arrière</span>
+                            <span class="tyre-picker__selection-size is-empty" data-tyre-selection-rear>Pas encore choisie</span>
+                          </span>
+                        </p>
+                        <p class="tyre-picker__status" role="status" aria-live="polite" data-tyre-picker-status>Choisissez d’abord la largeur de votre pneu.</p>
+                      </div>
+                      <button class="link-button tyre-picker__clear" type="button" hidden data-tyre-clear>Effacer le choix</button>
+                    </div>
+
+                    <p class="tyre-picker__note">Dimensions courantes pour voitures particulières et SUV. L'établissement confirme si votre dimension est en stock.</p>
+                  </div>
+
+                  <p class="tyre-picker__routes">
+                    <button class="link-button" type="button" data-tyre-picker-unknown>Je ne connais pas ma dimension de pneu</button>
+                    <button class="link-button" type="button" data-tyre-picker-manual>Ma dimension ne figure pas dans la liste</button>
+                  </p>
+                </div>
+
+                <div class="field" data-field="bandenmaat" data-size-manual>
+                  <label for="q-bandenmaat">Dimension de pneu <span class="field__opt">(facultatif)</span></label>
+                  <input id="q-bandenmaat" name="bandenmaat" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="205/55 R16 91V" aria-describedby="help-bandenmaat">
+                  <p class="field__help" id="help-bandenmaat">Elle figure sur le flanc de votre pneu, p. ex. 205/55 R16 91V. Vous ne l'avez pas sous la main ? Indiquez alors votre voiture ci-dessous.</p>
+                  <p class="field__error" id="err-bandenmaat" hidden></p>
+                </div>
+
+                <div class="field" data-field="bandenmaat_achter" hidden>
+                  <label for="q-bandenmaat-achter">Dimension des pneus arrière <span class="field__opt">(facultatif)</span></label>
+                  <input id="q-bandenmaat-achter" name="bandenmaat_achter" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="205/55 R16 91V" aria-describedby="help-bandenmaat_achter" disabled>
+                  <p class="field__help" id="help-bandenmaat_achter">Laissez vide si vos pneus arrière ont la même dimension que les pneus avant.</p>
+                  <p class="field__error" id="err-bandenmaat_achter" hidden></p>
+                </div>
                 </div>
 
                 <fieldset class="field field--choice" data-field="vestiging">
@@ -684,7 +858,7 @@
             <li><a href="../../fr/avis/">Avis</a></li>
             <li><a href="../../fr/emplois/">Offres d'emploi</a></li>
             <li><a href="../../fr/#faq">Questions fréquentes</a></li>
-            <li><a href="./" aria-current="page">Demander un devis</a></li>
+            <li><a href="#offerte" aria-current="page">Demander un devis</a></li>
           </ul>
         </nav>
       </div>
@@ -722,6 +896,6 @@
     </div>
 
     <!-- Strings for the client-side scripts, in the page language. -->
-    <script type="application/json" id="i18n">{"menuOpen":"Ouvrir le menu","menuClose":"Fermer le menu","errors":{"nameRequired":"Indiquez votre prénom et votre nom.","emailRequired":"Indiquez votre adresse e-mail.","emailInvalid":"Cette adresse e-mail ne semble pas correcte. Exemple : nom@exemple.be","phoneInvalid":"Vérifiez le numéro de téléphone, ou laissez ce champ vide.","branchRequired":"Choisissez un établissement.","messageTooShort":"Décrivez brièvement votre question (au moins 10 caractères)."},"errorSummaryOne":"Il reste 1 champ à vérifier.","errorSummaryMany":"Il reste {count} champs à vérifier.","callNumber":"Appeler le {phone}","labels":{"branch":"Établissement","name":"Nom","email":"E-mail","phone":"Téléphone","car":"Voiture","service":"Service","message":"Votre question"},"mailSubject":"Question via le site web","quote":{"subject":"Demande de devis","intro":"Je souhaiterais recevoir un devis sans engagement.","labels":{"services":"Services","timing":"Quand","branch":"Établissement","car":"Voiture","year":"Année de construction","fuel":"Carburant","plate":"Plaque d'immatriculation","vin":"Numéro de châssis","description":"Description","name":"Nom","email":"Adresse e-mail","phone":"Téléphone","contactPreference":"Contact de préférence par","contactMoment":"Meilleur moment pour me joindre"},"timing":{"snel":"Le plus vite possible","tweeweken":"Dans les 2 semaines","maanden":"Dans les prochains mois","orienteren":"Je me renseigne encore"},"fuel":{"benzine":"Essence","diesel":"Diesel","hybride":"Hybride","elektrisch":"Électrique","lpg":"LPG ou CNG"},"contactPreference":{"email":"E-mail","telefoon":"Téléphone"},"contactMoment":{"geen":"Pas de préférence","voormiddag":"Matin","namiddag":"Après-midi"},"recipient":"Votre e-mail est adressé à {email}.","errors":{"servicesRequired":"Choisissez au moins un service.","timingRequired":"Indiquez quand vous souhaitez passer.","branchRequired":"Choisissez un établissement.","makeRequired":"Indiquez la marque de votre voiture.","modelRequired":"Indiquez le modèle de votre voiture.","yearInvalid":"Indiquez l'année de construction en quatre chiffres, ou laissez ce champ vide.","vinInvalid":"Un numéro de châssis compte 17 lettres et chiffres. Vérifiez-le, ou laissez ce champ vide.","descriptionRequired":"Décrivez brièvement ce qu'il faut faire (au moins 10 caractères).","nameRequired":"Indiquez votre prénom et votre nom.","emailRequired":"Indiquez votre adresse e-mail.","emailInvalid":"Cette adresse e-mail ne semble pas correcte. Exemple : nom@exemple.be","phoneInvalid":"Vérifiez le numéro de téléphone, ou laissez ce champ vide.","phoneRequired":"Indiquez votre numéro de téléphone, ou choisissez l'e-mail comme moyen de contact."}},"services":{"onderhoud":"Entretien","banden":"Pneus","remmen":"Freins","airco":"Climatisation","herstellingen":"Réparations","autokeuring":"Contrôle technique (vérification)","batterij":"Batterie","distributie":"Courroie ou chaîne de distribution","occasiebanden":"Pneus d'occasion","anders":"Autre chose"}}</script>
+    <script type="application/json" id="i18n">{"menuOpen":"Ouvrir le menu","menuClose":"Fermer le menu","errors":{"nameRequired":"Indiquez votre prénom et votre nom.","emailRequired":"Indiquez votre adresse e-mail.","emailInvalid":"Cette adresse e-mail ne semble pas correcte. Exemple : nom@exemple.be","phoneInvalid":"Vérifiez le numéro de téléphone, ou laissez ce champ vide.","branchRequired":"Choisissez un établissement.","messageTooShort":"Décrivez brièvement votre question (au moins 10 caractères)."},"errorSummaryOne":"Il reste 1 champ à vérifier.","errorSummaryMany":"Il reste {count} champs à vérifier.","callNumber":"Appeler le {phone}","labels":{"branch":"Établissement","name":"Nom","email":"E-mail","phone":"Téléphone","car":"Voiture","service":"Service","message":"Votre question"},"mailSubject":"Question via le site web","quote":{"subject":"Demande de devis","intro":"Je souhaiterais recevoir un devis sans engagement.","labels":{"services":"Services","timing":"Quand","size":"Dimension de pneu","sizeFront":"Dimension avant","sizeRear":"Dimension arrière","branch":"Établissement","car":"Voiture","year":"Année de construction","fuel":"Carburant","plate":"Plaque d'immatriculation","vin":"Numéro de châssis","description":"Description","name":"Nom","email":"Adresse e-mail","phone":"Téléphone","contactPreference":"Contact de préférence par","contactMoment":"Meilleur moment pour me joindre"},"timing":{"snel":"Le plus vite possible","tweeweken":"Dans les 2 semaines","maanden":"Dans les prochains mois","orienteren":"Je me renseigne encore"},"fuel":{"benzine":"Essence","diesel":"Diesel","hybride":"Hybride","elektrisch":"Électrique","lpg":"LPG ou CNG"},"contactPreference":{"email":"E-mail","telefoon":"Téléphone"},"contactMoment":{"geen":"Pas de préférence","voormiddag":"Matin","namiddag":"Après-midi"},"recipient":"Votre e-mail est adressé à {email}.","errors":{"servicesRequired":"Choisissez au moins un service.","timingRequired":"Indiquez quand vous souhaitez passer.","branchRequired":"Choisissez un établissement.","makeRequired":"Indiquez la marque de votre voiture.","modelRequired":"Indiquez le modèle de votre voiture.","yearInvalid":"Indiquez l'année de construction en quatre chiffres, ou laissez ce champ vide.","vinInvalid":"Un numéro de châssis compte 17 lettres et chiffres. Vérifiez-le, ou laissez ce champ vide.","sizeInvalid":"Cette dimension de pneu ne semble pas correcte. Exemple : 205/55 R16","descriptionRequired":"Décrivez brièvement ce qu'il faut faire (au moins 10 caractères).","nameRequired":"Indiquez votre prénom et votre nom.","emailRequired":"Indiquez votre adresse e-mail.","emailInvalid":"Cette adresse e-mail ne semble pas correcte. Exemple : nom@exemple.be","phoneInvalid":"Vérifiez le numéro de téléphone, ou laissez ce champ vide.","phoneRequired":"Indiquez votre numéro de téléphone, ou choisissez l'e-mail comme moyen de contact."}},"tyres":{"subject":"Demande de pneus d'occasion","intro":"Je souhaiterais recevoir une proposition pour des pneus d'occasion.","labels":{"name":"Nom","email":"Adresse e-mail","phone":"Téléphone","car":"Voiture","year":"Année de construction","size":"Dimension de pneu","sizeFront":"Dimension avant","sizeRear":"Dimension arrière","quantity":"Nombre de pneus","season":"Type de pneu","branch":"Établissement","timing":"Quand","note":"Remarque"},"season":{"zomer":"Pneus été","winter":"Pneus hiver","vierseizoenen":"Pneus quatre saisons","onbekend":"Je ne sais pas encore"},"timing":{"snel":"Le plus vite possible","week":"Cette semaine","flexibel":"Rien ne presse"},"noBranch":"Pas de préférence","sizeUnknown":"Pas encore connue","empty":"Pas encore complété","recipient":"Votre e-mail est adressé à {email}.","errors":{"nameRequired":"Indiquez votre nom.","emailRequired":"Indiquez votre adresse e-mail.","emailInvalid":"Cette adresse e-mail ne semble pas correcte. Exemple : nom@exemple.be","phoneInvalid":"Vérifiez le numéro de téléphone, ou laissez ce champ vide.","yearInvalid":"Indiquez l'année de construction en quatre chiffres, ou laissez ce champ vide.","sizeInvalid":"Cette dimension de pneu ne semble pas correcte. Exemple : {example}","sizeOrCarRequired":"Indiquez votre dimension de pneu ou, à défaut, la marque et le modèle de votre voiture."},"picker":{"eyebrow":"Choix guidé","title":"Choisissez votre dimension de pneu.","intro":"Choisissez la largeur, la hauteur et le diamètre en pouces, comme indiqué sur le flanc de votre pneu. La dimension s’ajoute directement à votre demande.","labels":{"size":"Dimension de pneu","width":"Largeur","profile":"Hauteur","rim":"Pouces","season":"Saison (facultatif)","selectedSize":"Dimension choisie"},"select":"Sélectionnez","seasons":{"zomer":"Été","winter":"Hiver","vierseizoenen":"Toutes saisons"},"listNote":"Dimensions courantes pour voitures particulières et SUV. L'établissement confirme si votre dimension est en stock.","clear":"Effacer le choix","sizeEmpty":"Pas encore choisie","cta":"Ajouter cette dimension à ma demande","helpToggle":"Où trouver ma dimension de pneu ?","helpTitle":"Vous lisez la dimension sur le flanc du pneu.","helpIntro":"Vous trouverez ce code sur le côté de votre pneu actuel. Le manuel du véhicule ou le montant de porte reprend souvent le même format.","alternativeTitle":"Vous préférez une autre route ?","unknownTitle":"Je ne connais pas ma dimension de pneu","unknownText":"Pas de souci. Indiquez ensuite la marque, le modèle et l’année, et nous vous guiderons à partir de là.","unknownCta":"Aller aux données du véhicule","manualTitle":"Ma dimension ne figure pas dans la liste","manualText":"Pour une dimension moins courante, utilisez le champ libre existant dans la demande ci-dessous.","manualCta":"Saisir ma dimension manuellement","status":{"width":"Choisissez d’abord la largeur de votre pneu.","profile":"Largeur {width} choisie. Choisissez maintenant la hauteur.","rim":"{width}/{profile} choisi. Choisissez maintenant le diamètre en pouces.","ready":"La dimension {size} figure dans votre demande.","readySeason":"Dimension choisie : {size} · {season}."},"messages":{"prefilled":"Nous avons déjà rempli {size} et {season} dans votre demande ci-dessous.","prefilledSize":"Nous avons déjà rempli {size} dans votre demande ci-dessous.","needCar":"Pas de souci : indiquez la marque, le modèle et l’année de votre véhicule.","manualEntry":"Saisissez alors vous-même votre dimension de pneu."},"axles":{"toggle":"Les pneus arrière ont une taille différente","front":"Pneus avant","rear":"Pneus arrière","frontShort":"Avant","rearShort":"Arrière","selectedSizes":"Dimensions choisies","cta":"Ajouter ces dimensions à ma demande","status":{"front":{"width":"Choisissez d’abord la largeur de vos pneus avant.","profile":"Pneus avant : largeur {width} choisie. Choisissez maintenant la hauteur.","rim":"Pneus avant : {width}/{profile} choisi. Choisissez maintenant le diamètre en pouces."},"rear":{"width":"Choisissez maintenant la largeur de vos pneus arrière.","profile":"Pneus arrière : largeur {width} choisie. Choisissez maintenant la hauteur.","rim":"Pneus arrière : {width}/{profile} choisi. Choisissez maintenant le diamètre en pouces."},"ready":"Avant {front} et arrière {rear} figurent dans votre demande.","readySeason":"Dimensions choisies : avant {front}, arrière {rear} · {season}."},"messages":{"prefilled":"Nous avons déjà rempli avant {front}, arrière {rear} et {season} dans votre demande ci-dessous.","prefilledSize":"Nous avons déjà rempli avant {front} et arrière {rear} dans votre demande ci-dessous."}}}},"services":{"onderhoud":"Entretien","banden":"Pneus","remmen":"Freins","airco":"Climatisation","herstellingen":"Réparations","autokeuring":"Contrôle technique (vérification)","batterij":"Batterie","distributie":"Courroie ou chaîne de distribution","occasiebanden":"Pneus d'occasion","anders":"Autre chose"}}</script>
   </body>
 </html>
